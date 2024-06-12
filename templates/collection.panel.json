@@ -1,0 +1,676 @@
+{
+  "sections": {
+    "header": {
+      "type": "s_collection-header",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+        "image_size": "origin",
+        "mobile_image_size": "250px",
+        "bg_image_overlay": 0,
+        "text_position": "outside",
+        "show_collection_description": false
+      }
+    },
+    "child_collections": {
+      "type": "d_child-collection-list",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "slide_every": "item",
+        "slides_per_view": 5
+      }
+    },
+    "d_slideshow_cbwtQE": {
+      "type": "d_slideshow",
+      "blocks": {
+        "slide_qdy6z9": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-d5bfcb37-c563-455f-adb0-90309a8dbf7b",
+            "image": "shopify:\/\/shop_images\/Relieve_joint_pain_Red_Light_Therapy_Panel-PRUNGO.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Relieve joint pain",
+            "heading_scale": 120,
+            "subheading": "Medical-Grade Red Light Therapy",
+            "text": "",
+            "text_position": "center-left",
+            "use_box": false,
+            "f_button_label": "Shop Now",
+            "f_button_link": "shopify:\/\/products\/red-light-therapy-device-black",
+            "f_button_tier": "primary",
+            "s_button_label": "Buy on Amazon",
+            "s_button_link": "https:\/\/www.amazon.com\/gp\/product\/B0CJRDKT7C",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_iTXdeq": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-d5bfcb37-c563-455f-adb0-90309a8dbf7b",
+            "image": "shopify:\/\/shop_images\/Improve_your_sleep_Medical-Grade_Red_Light_Therapy-PRUNGO.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Improve your sleep",
+            "heading_scale": 120,
+            "subheading": "Medical-Grade Red Light Therapy",
+            "text": "",
+            "text_position": "center-left",
+            "use_box": false,
+            "f_button_label": "Shop Now",
+            "f_button_link": "shopify:\/\/products\/red-light-therapy-device-purple",
+            "f_button_tier": "primary",
+            "s_button_label": "Buy on Amazon",
+            "s_button_link": "https:\/\/www.amazon.com\/gp\/product\/B0CJRDKT7C",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_cRXCTz": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-d5bfcb37-c563-455f-adb0-90309a8dbf7b",
+            "image": "shopify:\/\/shop_images\/Chronic_Pain_Resolution_Medical-Grade_Red_Light_Therapy-PRUNGO.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Chronic Pain Resolution",
+            "heading_scale": 120,
+            "subheading": "Medical-Grade Red Light Therapy",
+            "text": "",
+            "text_position": "center-left",
+            "use_box": false,
+            "f_button_label": "Shop Now",
+            "f_button_link": "shopify:\/\/products\/red-light-therapy-device-black-1",
+            "f_button_tier": "primary",
+            "s_button_label": "Buy On Amazon",
+            "s_button_link": "https:\/\/www.amazon.com\/gp\/product\/B0CJRDKT7C",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qdy6z9",
+        "slide_iTXdeq",
+        "slide_cRXCTz"
+      ],
+      "settings": {
+        "section_layout": "full",
+        "image_size": "750px",
+        "mobile_image_size": "550px",
+        "mobile_offset": false,
+        "show_arrows_navigation": false,
+        "show_pagination": false,
+        "enable_autoplay": true,
+        "autoplay": 5,
+        "animated_caption": false,
+        "mobile_hidden": false
+      }
+    },
+    "d_moving_text_Pj8TVa": {
+      "type": "d_moving-text",
+      "blocks": {
+        "text_hbVEKq": {
+          "type": "text",
+          "settings": {
+            "text": "Free Shipping",
+            "icon": "package",
+            "link": ""
+          }
+        },
+        "text_ifaXhg": {
+          "type": "text",
+          "settings": {
+            "text": "Industry-Leading Quality",
+            "icon": "check",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_hbVEKq",
+        "text_ifaXhg"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent2",
+        "text_scale": 80,
+        "stop_on_hover": true,
+        "moving_direction": "normal",
+        "speed_mult": "1",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "d_featured_collection_tabbed_WTimTd": {
+      "type": "d_featured-collection-tabbed",
+      "blocks": {
+        "tab_aVcH3a": {
+          "type": "tab",
+          "settings": {
+            "tab_heading": "{{ block.settings.collection.title }}",
+            "collection": "red-light-therapy-panel",
+            "products_limit": 5,
+            "show_ending_banner": false,
+            "color_scheme": "",
+            "image_overlay": 30,
+            "heading": "{{ block.settings.collection.title }}",
+            "heading_scale": 80,
+            "subheading": "Shop All",
+            "button": "Shop All",
+            "button_tier": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "tab_aVcH3a"
+      ],
+      "settings": {
+        "heading": "Featured collection",
+        "subheading": "",
+        "slides_per_view": 3,
+        "slide_every": "row"
+      }
+    },
+    "d_hero_background_video_3aN4w8": {
+      "type": "d_hero-background-video",
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "embedded_video": "",
+        "hosted_video": "shopify:\/\/files\/videos\/prungo-red light therapy panel.mp4",
+        "overlay": 50,
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "display_desktop_only": false,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_gallery_slideshow_H36Fad": {
+      "type": "d_gallery-slideshow",
+      "blocks": {
+        "gallery_item_C9qjb3": {
+          "type": "gallery_item",
+          "settings": {
+            "color_scheme": "invert",
+            "image": "shopify:\/\/shop_images\/Chronic_Pain_Resolution_Medical-Grade_Red_Light_Therapy08-PRUNGO.webp",
+            "image_overlay": 0,
+            "text_position": "center-center",
+            "link": "",
+            "heading": "",
+            "subheading": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "gallery_item_FRafGD": {
+          "type": "gallery_item",
+          "settings": {
+            "color_scheme": "invert",
+            "image": "shopify:\/\/shop_images\/Chronic_Pain_Resolution_Medical-Grade_Red_Light_Therapy07-PRUNGO.webp",
+            "image_overlay": 0,
+            "text_position": "center-center",
+            "link": "",
+            "heading": "",
+            "subheading": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "gallery_item_NKhapL": {
+          "type": "gallery_item",
+          "settings": {
+            "color_scheme": "invert",
+            "image": "shopify:\/\/shop_images\/Chronic_Pain_Resolution_Medical-Grade_Red_Light_Therapy06-PRUNGO.webp",
+            "image_overlay": 0,
+            "text_position": "center-center",
+            "link": "",
+            "heading": "",
+            "subheading": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "gallery_item_4VdiVT": {
+          "type": "gallery_item",
+          "settings": {
+            "color_scheme": "invert",
+            "image": "shopify:\/\/shop_images\/Chronic_Pain_Resolution_Medical-Grade_Red_Light_Therapy05-PRUNGO.webp",
+            "image_overlay": 0,
+            "text_position": "center-center",
+            "link": "",
+            "heading": "",
+            "subheading": "",
+            "text": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "gallery_item_C9qjb3",
+        "gallery_item_FRafGD",
+        "gallery_item_NKhapL",
+        "gallery_item_4VdiVT"
+      ],
+      "settings": {
+        "heading": "Treat Multiple Pain Areas",
+        "subheading": "",
+        "slide_every": "row",
+        "slides_per_view": 4,
+        "item_height": 450,
+        "mobile_item_height": 450,
+        "use_box": false,
+        "heading_scale": 80,
+        "enlarge_text": false,
+        "button_tier": "primary"
+      }
+    },
+    "main": {
+      "type": "s_collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {
+            "hide_out_of_stock_filter": false,
+            "color_swatches": false,
+            "collapse_filters": false,
+            "show_view_all": true
+          }
+        }
+      },
+      "block_order": [
+        "filters"
+      ],
+      "disabled": true,
+      "settings": {
+        "cards_view": "grid",
+        "columns": 4,
+        "rows": 3,
+        "pagination_type": "button",
+        "show_sort_dropdown": true,
+        "show_active_filters": true,
+        "sidebar_as_drawer": false,
+        "sidebar_width": 20
+      }
+    },
+    "d_hero_background_video_ikKKBf": {
+      "type": "d_hero-background-video",
+      "blocks": {
+        "subheading_r8tqPg": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_Y4njmU": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Hero video heading",
+            "heading_scale": 120
+          }
+        },
+        "text_6mPi3K": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the hero image or content on the template.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "buttons_tjRE6H": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "mobile_hidden": false,
+            "info": "",
+            "f_button_label": "Shop Now",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_r8tqPg",
+        "heading_Y4njmU",
+        "text_6mPi3K",
+        "buttons_tjRE6H"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "embedded_video": "",
+        "hosted_video": "shopify:\/\/files\/videos\/video.mp4",
+        "overlay": 0,
+        "image_size": "750px",
+        "mobile_image_size": "origin",
+        "image": "shopify:\/\/shop_images\/Relieve_joint_pain_Red_Light_Therapy_Panel02-PRUNGO.webp",
+        "display_desktop_only": false,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_testimonials_NT9WPA": {
+      "type": "d_testimonials",
+      "blocks": {
+        "testimonial_GCYJ7P": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "H.E.T. Rider",
+            "heading": "Very powerful red light therapy, easy to use!",
+            "text": "This is a very large panel and powerful red light therapy device. It seems very durable and well made, and has the option of 660nm or 850nm. The light has brightness control, and it is VERY bright, so you definitely need the glasses that are provided. I like that it can be used on a table top and has a kick stand to hold it in place. Though it comes with a pretty good user manual, I’m not sure how close you are supposed to have this to your body. Because of the brightness, you can’t really work, read or even watch tv, as you really must wear the goggles. It is very difficult to do anything with them on. I also haven’t used the hardware that is provided to hang the device. The hardware seems well made, and I’m sure can hold this device which weighs about 6 pounds. It’s very easy to use and easy to move around. It’s also easy to store if needed.",
+            "star_count": "5",
+            "product": ""
+          }
+        },
+        "testimonial_bn4DMC": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Paul",
+            "heading": "Strong RLT",
+            "text": "Build of the unit is very solid and feels to be of high quality. The red light performance is quite strong and matches that of the build quality. Light intensity\/brightness can be adjusted via the buttons on the side of the panel. The included glasses are an essential to wear because the lights are bright! I love the included stand. The panel looks quite sleek so it blends in nicely with decor. Very happy with this red light panel.",
+            "star_count": "5",
+            "product": ""
+          }
+        },
+        "testimonial_qd8xKg": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "booboo",
+            "heading": "Versatile red light therapy unit",
+            "text": "With the two bandwidths and adjustable brightness setting's, are a highlight of this unit. I consider this unit a serious light therapy device. It operates on 120 volt house voltage and has several method's provided for hanging and securing the unit. That makes it very versatile to hang and position for use on my body. It also has a tilt stand bracket that allows for angle positioning. The rubber feet on the bottom side also add scratch free standing support. The control panel is on the right side facing the front. I used it facing my lower back, about 4 inches away. For 30 minutes. The warming effect and deep feeling certainly relieved my sore back muscles. This is a great, I think professional grade unit, that I will get a lot of use.",
+            "star_count": "5",
+            "product": ""
+          }
+        },
+        "testimonial_HU33R9": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Toy Peterson",
+            "heading": "Daily Regime",
+            "text": "Let me first say this light is close to many of the professional places offering red light therapy. You have multiple options in terms of light. You’ll get the safety glasses which are critical. This light is strong, meaning anyone else in the room with you will need glasses. I’m using this for my neck and have it on while I’m working. The light is so strong that although I’m not looking at it since I’m at the computer and it’s behind me my eyes will start to burn. So, the glasses are critical!\n\nComes with hardware to hang it up but I’m using the built in one as it’s easier. I’m using this daily 4X a day! For my skin health benefits and then my chronic neck pain.",
+            "star_count": "5",
+            "product": ""
+          }
+        },
+        "testimonial_bbyfq7": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Mike",
+            "heading": "Nice!",
+            "text": "This is a really nice red therapy light. I’ve tried a number of these red light therapy devices now and this is definitely one of the best. The only other one I would say was better cost just over 2x as much.\n\nIt’s well built, easy to set up and use, provides a couple different mounting options and the light covers a good large portion of the body. Just make sure you wear eye protection when looking at the light.",
+            "star_count": "5",
+            "product": ""
+          }
+        },
+        "testimonial_XnycHh": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Jaa Naa",
+            "heading": "Soild built and super bright",
+            "text": "This red light therapy panel is built very solidly, and the light is very bright. It comes with green glasses so make sure that you wear glasses when using this device, otherwise it's extremely bright and avoid direct contact with eyes at all cost. If looked directly at the LEDs, it can hurt the eyes. Unfortunately, I made that mistake and that's why I'm giving word of caution. Other than that, this red light panel is very solid and the standard is very solid as well. I don't t have to worry about it tipping over. When used for extended amount of time, the LED's do get hot, but there are built-in fans behind the panel that cools the pannel down. On the instructions it says, the results can be visible in 1 to 2 months, so as of now, it's been about a week that I've been using this panel. I am using this red light therapy panel because I have thinner hair and I want them to be thicker. I guess only time will tell if this works or not but as of now, of 1 week use, I have noticed a little tingling feelings in my sculp which seems like the blood circulation. To me it seems like it's working because of the tingling feeling which I never had before.",
+            "star_count": "5",
+            "product": ""
+          }
+        },
+        "testimonial_QYkqA3": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Tiffany Trujillo",
+            "heading": "Super strong light.",
+            "text": "I’m not sure what I was expecting but the light is definitely stronger then I imagined it would be. It’s nice that it comes with the hanging hardware. It’s a very sturdy and durable machine. Comes with glasses which makes it easier to tolerate the light. It produces some heat but not anything too crazy. The buttons and plugs a feel sturdy.",
+            "star_count": "5",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_GCYJ7P",
+        "testimonial_bn4DMC",
+        "testimonial_qd8xKg",
+        "testimonial_HU33R9",
+        "testimonial_bbyfq7",
+        "testimonial_XnycHh",
+        "testimonial_QYkqA3"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<strong>Trusted By Our Customers<\/strong>",
+        "subheading": "",
+        "slides_per_view": 3,
+        "show_stars": true,
+        "section_button_label": "",
+        "section_button_link": ""
+      }
+    },
+    "d_video_popup_with_text_CBNTzx": {
+      "type": "d_video-popup-with-text",
+      "blocks": {
+        "subheading_zKt7ei": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_piVqR6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text heading",
+            "heading_scale": 120
+          }
+        },
+        "text_HzQRJQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the hero image or content on the template.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "buttons_r73Crw": {
+          "type": "buttons",
+          "settings": {
+            "info": "",
+            "f_button_label": "Find More",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zKt7ei",
+        "heading_piVqR6",
+        "text_HzQRJQ",
+        "buttons_r73Crw"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "container",
+        "embedded_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "autoplay": true,
+        "image_size": "450px",
+        "mobile_image_size": "origin",
+        "image_width": 50,
+        "image_position": "left",
+        "text_position": "center-center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "d_background_video_with_text_GwY6TH": {
+      "type": "d_background-video-with-text",
+      "blocks": {
+        "subheading_AyDC6X": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_8R7yUb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video with text heading",
+            "heading_scale": 120
+          }
+        },
+        "text_RKkfWG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the hero image or content on the template.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "buttons_pUNHFR": {
+          "type": "buttons",
+          "settings": {
+            "info": "",
+            "f_button_label": "Find More",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AyDC6X",
+        "heading_8R7yUb",
+        "text_RKkfWG",
+        "buttons_pUNHFR"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "container",
+        "embedded_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "display_desktop_only": false,
+        "image_width": 50,
+        "image_position": "left",
+        "text_position": "center-center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "17138585738762413f": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_bUTrpY": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
+          "settings": {
+            "title": "How the fans feel",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        },
+        "juniper_tiktok_feed_mintty_tiktok_feed_JxT7Q8": {
+          "type": "shopify:\/\/apps\/juniper-tiktok-feed\/blocks\/mintty-tiktok-feed\/fa514c33-5475-4484-b270-5f1e7eb87a9a",
+          "settings": {
+            "title": "Words of Relief From Our Customers",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_bUTrpY",
+        "juniper_tiktok_feed_mintty_tiktok_feed_JxT7Q8"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      }
+    },
+    "d_video_player_k4YrGc": {
+      "type": "d_video-player",
+      "disabled": true,
+      "settings": {
+        "heading": "Video player",
+        "embedded_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "use_original_ar": false,
+        "desktop_height": "auto",
+        "mobile_height": "auto",
+        "content_width": 80,
+        "section_button_label": "",
+        "section_button_url": ""
+      }
+    },
+    "171582494999658808": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_medals_bPKXhe": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/medals\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "judge_me_reviews_featured_carousel_KzRU4C": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        },
+        "judge_me_reviews_verified_badge_HgxLkM": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/verified_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "judge_me_reviews_all_reviews_text_cGmPtN": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "judge_me_reviews_ugc_media_grid_94KEdF": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/ugc_media_grid\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_medals_bPKXhe",
+        "judge_me_reviews_featured_carousel_KzRU4C",
+        "judge_me_reviews_verified_badge_HgxLkM",
+        "judge_me_reviews_all_reviews_text_cGmPtN",
+        "judge_me_reviews_ugc_media_grid_94KEdF"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      }
+    }
+  },
+  "order": [
+    "header",
+    "child_collections",
+    "d_slideshow_cbwtQE",
+    "d_moving_text_Pj8TVa",
+    "d_featured_collection_tabbed_WTimTd",
+    "d_hero_background_video_3aN4w8",
+    "d_gallery_slideshow_H36Fad",
+    "main",
+    "d_hero_background_video_ikKKBf",
+    "d_testimonials_NT9WPA",
+    "d_video_popup_with_text_CBNTzx",
+    "d_background_video_with_text_GwY6TH",
+    "17138585738762413f",
+    "d_video_player_k4YrGc",
+    "171582494999658808"
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "sections": {
+    "header": {
+      "type": "s_page-header",
+      "settings": {
+        "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+        "image_size": "250px",
+        "mobile_image_size": "250px",
+        "bg_image_overlay": 30,
+        "text_position": "inside",
+        "custom_text": ""
+      }
+    },
+    "main": {
+      "type": "d_faq",
+      "blocks": {
+        "question_CnpbKn": {
+          "type": "question",
+          "settings": {
+            "heading": "Is Your Product FDA Approved?",
+            "icon": "none",
+            "text": "<p>Yes! we have FDA cleared，The certificate UDI code is 06976510830038, You can check on the official website.<\/p>"
+          }
+        },
+        "question_hxKbTq": {
+          "type": "question",
+          "settings": {
+            "heading": "What types of pain can the Prungo module address?",
+            "icon": "none",
+            "text": "<p>The Prungo module is incredibly versatile and can effectively assist with a wide range of acute and chronic conditions. Laser therapy has demonstrated success in addressing various ailments including:<\/p><p>Rheumatoid arthritis<\/p><p>Meniscus tear<\/p><p>Spondylitis<\/p><p>Ankylosing spondylitis<\/p><p>Chronic arthritis<\/p><p>Degenerative arthritis<\/p><p>Reactive arthritis<\/p><p>Collarbone pain<\/p><p>Apophysitis<\/p><p>Migratory arthritis<\/p><p>Autoimmune arthritis<\/p><p>Atrophic arthritis<\/p><p>Bacterial arthritis<\/p><p>Tendon synovial sheath<\/p><p>Patellofemoral arthritis<\/p><p>Hand joint symptom<\/p><p>And <a href=\"https:\/\/prungo.com\/products\/prungo-red-light-therapy-moudule\">much more...<\/a><\/p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "heading": "Who is suitable to use this product?",
+            "icon": "none",
+            "text": "<p>Suitable for people with long-term chronic inflammatory pain, joint pain, muscle pain, or discomfort; suitable for people of all ages, skin types, and backgrounds, it is designed to meet a wide range of health and wellness needs and make it accessible to everyone.<\/p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "heading": "Who is not suitable to use this product?",
+            "icon": "none",
+            "text": "<p>For people with photosensitivity, impaired skin sensation,pregnant women,people with severe heart disease or high blood pressure,or people with skin sensation disorders due to diabetes,we recommend that you consult a medical professional.<\/p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "heading": "How to choose among the three modes of this product?",
+            "icon": "none",
+            "text": "<p><br\/>  The <strong>MILD<\/strong> mode has the shortest time and the highest instantaneous energy, generally used for pre-exercise warm-up;<br\/><\/p><p><br\/>  The <strong>MID<\/strong> mode has moderate time and gentle energy, suitable for post-exercise relaxation or fatigue relief;<br\/><\/p><p><br\/>  The <strong>STRONG<\/strong> mode has the longest time and the highest overall light dose, generally suitable for painful areas of muscles and joints.<br\/><\/p>"
+          }
+        },
+        "question_wNwMHc": {
+          "type": "question",
+          "settings": {
+            "heading": "What is the frequency of use for this product?",
+            "icon": "none",
+            "text": "<p><br\/>  For pain and discomfort, it is generally used twice a day, with a maximum limit of three times; warm-up and relaxation can be used before and after exercise.<br\/><\/p><p><br\/>  Using the Prungo Module not only helps you quickly alleviate pain but also improves your quality of life through continuous therapy.<br\/><\/p><p><br\/>  Try it now and experience each day filled with vitality, enjoying a pain-free journey through life! Pain points are no longer obstacles but rather the beginning of your regained freedom.<br\/><\/p>"
+          }
+        },
+        "question_8rmpyz": {
+          "type": "question",
+          "settings": {
+            "heading": "How long will I use for pain to improve?",
+            "icon": "none",
+            "text": "<p><br\/>  If you have mild chronic joint pain, muscle soreness, it is recommended to use once a day, each time for 15 minutes (MID), duration (2-3 days), to achieve the best treatment effect;<br\/><\/p><p><br\/>  Accompanied by severe joint pain, it is recommended to use 2 times a day, each lasting 20 minutes (strong), the duration of 3-7 days (change to once a day after the effect improves), in order to achieve the best treatment effect;<br\/><\/p><p><br\/>  Long-term improvement: Pain decreased significantly after an average of 3-7 days of continuous use of Prungo modules, and pain symptoms improved significantly after 7-14 days.<br\/><\/p>"
+          }
+        },
+        "question_9nWA4y": {
+          "type": "question",
+          "settings": {
+            "heading": "Can the strap be adjusted for space?  I want to use all parts of my body?",
+            "icon": "none",
+            "text": "<p><br\/>  Absolutely! Our red light therapy modules are meticulously designed based on feedback from thousands of testers and feature different sizes of professional straps and diverse modular combinations.<br\/><\/p><p><br\/>  Whether for the shoulders, neck, back, waist, elbows, knees, or legs, our device meets the needs of various body parts.<br\/><\/p><p><br\/>  It offers easy, secure attachment and simple operation, allowing you to enjoy a comfortable, comprehensive therapy experience.<br\/><\/p>"
+          }
+        },
+        "question_teXBCq": {
+          "type": "question",
+          "settings": {
+            "heading": "How long does it take to charge the product and how long does the battery last?",
+            "icon": "none",
+            "text": "<p><br\/>  Product built-in 5000mAh portable charging box, can be quickly charged within 4 hours, the power of the charging box can be charged for a module 5 times, each module according to different modes can be used 1-2 hours.<br\/><\/p><p><br\/>  The individual modules are also configured with data charging cables, and with this convenient feature, you can ensure that your health is taken care of anytime, anywhere, without worrying about running out of power while on the go.<br\/><\/p>"
+          }
+        },
+        "question_Qn9U6K": {
+          "type": "question",
+          "settings": {
+            "heading": "Does the product have any side effects or special precautions?",
+            "icon": "none",
+            "text": "<p>Our product is completely safe to use and has no known side effects.It is non-invasive and gentle on the skin.However,we recommend consulting with a healthcare professional if you have any specific concerns or medical conditions.<\/p>"
+          }
+        },
+        "question_M9Q7LP": {
+          "type": "question",
+          "settings": {
+            "heading": "Is there a dedicated customer service team available for assistance?",
+            "icon": "none",
+            "text": "<p><br\/>  Yes, we have a <a href=\"\/pages\/contact\" target=\"_blank\" title=\"Contact\">dedicated customer service team<\/a> ready to help with any questions or concerns you may have. Our team is professional, responsive, and committed to providing excellent support to our customers. We strongly recommend that you get in touch with our support team via live chat or by sending an email to support@prungo.com so that we can help you further. Looking forward to talking with you!<br\/><\/p>"
+          }
+        },
+        "question_bpMw8N": {
+          "type": "question",
+          "settings": {
+            "heading": "How does the Prungo module function?",
+            "icon": "none",
+            "text": "<p>Red light therapy operates by stimulating blood circulation and enhancing cellular energy production (ATP) in the targeted area.This process aids in reducing pain and inflammation while initiating the healing process,facilitating the repair of damaged tissues.What sets the Prungo module apart from other red light treatment panels is its utilization of dual laser technology and polarized light technology.These advancements enable both red and infrared light to penetrate deeply into the joint with precise dosages,resulting in more effective outcomes.<\/p>"
+          }
+        },
+        "question_HJRLrJ": {
+          "type": "question",
+          "settings": {
+            "heading": "Is there scientific evidence supporting the Prungo module?",
+            "icon": "none",
+            "text": "<p>Over the past few years,there has been a significant increase in clinical research focused on red light therapy,with more than 6,000 scientific studies showcasing the beneficial effects of utilizing PBM (red light therapy).You can follow our Blog for regular updates on medical reports related to Red Light research.<\/p>"
+          }
+        },
+        "question_U9Y3hg": {
+          "type": "question",
+          "settings": {
+            "heading": "How does the Prungo module stand out from other devices?",
+            "icon": "none",
+            "text": "<p><br\/>  The Prungo module distinguishes itself by maintaining precise wavelength, intensity, and dosage levels. Through extensive research from numerous successful clinical trials, it has been designed to utilize the most effective wavelengths, dosages, and intensities. By employing advanced medical-grade dual-light technology and a unique polarization grating, the Prungo module provides targeted relief to joints by improving blood flow and cellular energy production (ATP) in the specific area. This not only helps reduce pain and inflammation but also initiates the healing process, aiding in the repair of damaged tissues.<br\/><\/p>"
+          }
+        },
+        "question_Hxgpff": {
+          "type": "question",
+          "settings": {
+            "heading": "I'd like to know the shipping service, return service and warranty service policy related to this product.",
+            "icon": "none",
+            "text": "<p>More detailed service details,please click the following link to view,feel free to contact customer service,so that we can further help you!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_CnpbKn",
+        "question_hxKbTq",
+        "q2",
+        "q3",
+        "q4",
+        "question_wNwMHc",
+        "question_8rmpyz",
+        "question_9nWA4y",
+        "question_teXBCq",
+        "question_Qn9U6K",
+        "question_M9Q7LP",
+        "question_bpMw8N",
+        "question_HJRLrJ",
+        "question_U9Y3hg",
+        "question_Hxgpff"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "content_width": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "main"
+  ]
+}

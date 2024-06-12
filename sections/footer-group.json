@@ -1,0 +1,119 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "d_image_with_text_xhz4M4": {
+      "type": "d_image-with-text",
+      "blocks": {
+        "heading_gX9VEk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Prungo <strong>Module<\/strong>",
+            "heading_scale": 105
+          }
+        },
+        "text_tDQq3f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Prungo Module effectively alleviates joint pain, reduces inflammation, and promotes the healing of damaged tissues.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "buttons_BHPWzw": {
+          "type": "buttons",
+          "settings": {
+            "info": "",
+            "f_button_label": "Find More",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gX9VEk",
+        "text_tDQq3f",
+        "buttons_BHPWzw"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "container",
+        "image": "shopify:\/\/shop_images\/1_adfaad86-9616-41af-afae-29d1a1794673.jpg",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "image_width": 30,
+        "image_position": "left",
+        "text_position": "center-center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "g_footer": {
+      "type": "g_footer",
+      "blocks": {
+        "d59c2c60-291c-4855-abb3-5b303d4c802c": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "logo": "shopify:\/\/shop_images\/logo1-prungo.webp",
+            "logo_width": 80,
+            "text": "<p>Welcome to our specialized establishment dedicated to professional red light therapy devices. Our shop is for those seeking the numerous benefits and healing properties that red light therapy has to offer.<br\/>Join us on this journey to a better you. <\/p>",
+            "show_social_icons": false
+          }
+        },
+        "menu_cGyKWc": {
+          "type": "menu",
+          "settings": {
+            "heading": "POLICYS",
+            "menu": "service"
+          }
+        },
+        "menu_3cTWnN": {
+          "type": "menu",
+          "settings": {
+            "heading": "SERVICE",
+            "menu": "footer"
+          }
+        },
+        "social_menu_DbQk6r": {
+          "type": "social_menu",
+          "disabled": true,
+          "settings": {
+            "heading": "Follow us"
+          }
+        },
+        "newsletter_yhgLTc": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Stay Connected",
+            "text": "<p>Sign up to emails, and stay updated with our latest news, products, and offers.<\/p>",
+            "show_social_icons": true
+          }
+        }
+      },
+      "block_order": [
+        "d59c2c60-291c-4855-abb3-5b303d4c802c",
+        "menu_cGyKWc",
+        "menu_3cTWnN",
+        "social_menu_DbQk6r",
+        "newsletter_yhgLTc"
+      ],
+      "settings": {
+        "show_country_selector": true,
+        "show_language_selector": false,
+        "social_new_tab": false,
+        "show_scroll_to_top": true,
+        "payment_enable": true,
+        "enable_follow_on_shop": false
+      }
+    }
+  },
+  "order": [
+    "d_image_with_text_xhz4M4",
+    "g_footer"
+  ]
+}

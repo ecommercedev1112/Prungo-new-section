@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "main": {
+      "type": "s_article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_scale": 80,
+            "show_author": false,
+            "show_date": false,
+            "show_share": true,
+            "show_border": false,
+            "show_tags": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+            "font_scale": 100
+          }
+        },
+        "comments": {
+          "type": "comments",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "comments"
+      ],
+      "settings": {
+        "content_width": 80,
+        "image_full_width": false,
+        "image_size": "750px",
+        "mobile_image_size": "450px"
+      }
+    },
+    "17162842442b18feb8": {
+      "type": "apps",
+      "blocks": {
+        "product_blog_tags_free_7XKDbd": {
+          "type": "shopify:\/\/apps\/product-blog-tags\/blocks\/free\/67632605-1942-48ed-8754-52e0f58207d1",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_blog_tags_free_7XKDbd"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      }
+    },
+    "d_image_with_text_rfAEfh": {
+      "type": "d_image-with-text",
+      "blocks": {
+        "subheading_aFUyB9": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_Hkm33g": {
+          "type": "heading",
+          "settings": {
+            "heading": "PRUNGO <strong>MODULE<\/strong>",
+            "heading_scale": 100
+          }
+        },
+        "text_ALPTCK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Prungo Module effectively alleviates joint pain, reduces inflammation, and promotes the healing of damaged tissues.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "buttons_3QNhhC": {
+          "type": "buttons",
+          "settings": {
+            "info": "",
+            "f_button_label": "Find More",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_aFUyB9",
+        "heading_Hkm33g",
+        "text_ALPTCK",
+        "buttons_3QNhhC"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "container",
+        "image": "shopify:\/\/shop_images\/1_adfaad86-9616-41af-afae-29d1a1794673.jpg",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "image_width": 30,
+        "image_position": "left",
+        "text_position": "center-center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17162842442b18feb8",
+    "d_image_with_text_rfAEfh"
+  ]
+}

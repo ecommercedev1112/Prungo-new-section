@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "header": {
+      "type": "s_collection-header",
+      "settings": {
+        "bg_image": "{{ collection.image }}",
+        "show_collection_description": true
+      }
+    },
+    "child_collections": {
+      "type": "d_child-collection-list",
+      "settings": {}
+    },
+    "main": {
+      "type": "s_collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "filters"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "header",
+    "child_collections",
+    "main"
+  ]
+}

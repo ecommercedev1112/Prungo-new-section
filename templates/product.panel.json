@@ -1,0 +1,819 @@
+{
+  "sections": {
+    "1649081791eb3a0c3d": {
+      "type": "d_promo-banner",
+      "blocks": {
+        "10fdd41f-2315-41d6-9635-dd0c3a78ad9c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get an Extra $10 off",
+            "heading_scale": 80,
+            "subheading": ""
+          }
+        },
+        "30140831-cd15-4379-b55d-7ac5600dc0e5": {
+          "type": "timer",
+          "settings": {
+            "date": "06-013-2024",
+            "hide_on_complete": false
+          }
+        },
+        "29095ef3-e037-48ac-a925-11a52cbedbd1": {
+          "type": "button",
+          "settings": {
+            "mobile_hidden": false,
+            "label": "Use Code: GET10",
+            "link": "",
+            "tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "10fdd41f-2315-41d6-9635-dd0c3a78ad9c",
+        "30140831-cd15-4379-b55d-7ac5600dc0e5",
+        "29095ef3-e037-48ac-a925-11a52cbedbd1"
+      ],
+      "settings": {
+        "color_scheme": "accent2",
+        "section_layout": "full",
+        "desktop_text_align": "space-between",
+        "link": "",
+        "pattern": "pattern-hideout_40",
+        "pattern_scale": 100,
+        "pattern_animation": "top-right"
+      }
+    },
+    "main": {
+      "type": "s_product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_scale": 95,
+            "enable_text_truncation": false,
+            "max_lines": 1,
+            "badges_display": "after",
+            "show_low_stock": false,
+            "badges_scale": 100,
+            "prev_attach": true
+          }
+        },
+        "17d79ac0-9468-4e01-9982-83445b2febda": {
+          "type": "rating",
+          "settings": {
+            "show_count": true,
+            "prev_attach": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_savings": true,
+            "text_scale": 250,
+            "bold_text": true,
+            "show_taxes": true,
+            "prev_attach": true
+          }
+        },
+        "a68e8d3b-8a31-48f2-9d39-c0737960dcdd": {
+          "type": "countdown",
+          "disabled": true,
+          "settings": {
+            "meta_heading": "Sale ends in:",
+            "text_scale": 175,
+            "use_sale_price_color": true,
+            "prev_attach": false
+          }
+        },
+        "7e37f69f-d0e7-4b32-801c-81c63db85c51": {
+          "type": "variant_selector",
+          "settings": {
+            "picker_type": "swatch",
+            "show_variant_image": "colors",
+            "color_swatches": false,
+            "price_display": "diff",
+            "swatches_grid_columns": "auto",
+            "show_stock_alert": false,
+            "prev_attach": false
+          }
+        },
+        "c0cefcd5-acba-4005-bf0e-d50cda7faab2": {
+          "type": "product_options_list",
+          "disabled": true,
+          "settings": {
+            "show_sku": false,
+            "enable_sorting": false,
+            "enable_stock_sort": false,
+            "prev_attach": false
+          }
+        },
+        "stock_alert": {
+          "type": "stock_alert",
+          "settings": {
+            "actual_inventory": false,
+            "prev_attach": true
+          }
+        },
+        "quantity_selector_dqPFRP": {
+          "type": "quantity_selector",
+          "settings": {
+            "input_type": "input",
+            "prev_attach": true
+          }
+        },
+        "buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "enable_stock_notifier": true,
+            "show_payment_methods": true,
+            "show_gift_card_recipient": false,
+            "prev_attach": true
+          }
+        },
+        "6869677d-4a02-4300-adfb-3e693d0b1235": {
+          "type": "share",
+          "settings": {
+            "meta_heading": "Share this product",
+            "use_colors": false,
+            "prev_attach": true
+          }
+        },
+        "description_Yt4PwR": {
+          "type": "description",
+          "settings": {
+            "meta_heading": "Description",
+            "font_scale": 100,
+            "use_expand": true,
+            "prev_attach": false
+          }
+        },
+        "collapsible_tab_page_fBH3BJ": {
+          "type": "collapsible_tab_page",
+          "settings": {
+            "heading": "Shipping Policy",
+            "icon": "truck-delivery",
+            "page": "shipping-policy",
+            "prev_attach": false
+          }
+        },
+        "collapsible_tab_page_mD8tKU": {
+          "type": "collapsible_tab_page",
+          "settings": {
+            "heading": "Return & Refund Policy",
+            "icon": "check",
+            "page": "return-refund-policy",
+            "prev_attach": false
+          }
+        },
+        "collapsible_tab_page_ekXe8p": {
+          "type": "collapsible_tab_page",
+          "settings": {
+            "heading": "Warranty Policy",
+            "icon": "bell",
+            "page": "warranty",
+            "prev_attach": false
+          }
+        },
+        "separator_hMQ4C4": {
+          "type": "separator",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "17d79ac0-9468-4e01-9982-83445b2febda",
+        "price",
+        "a68e8d3b-8a31-48f2-9d39-c0737960dcdd",
+        "7e37f69f-d0e7-4b32-801c-81c63db85c51",
+        "c0cefcd5-acba-4005-bf0e-d50cda7faab2",
+        "stock_alert",
+        "quantity_selector_dqPFRP",
+        "buttons",
+        "6869677d-4a02-4300-adfb-3e693d0b1235",
+        "description_Yt4PwR",
+        "collapsible_tab_page_fBH3BJ",
+        "collapsible_tab_page_mD8tKU",
+        "collapsible_tab_page_ekXe8p",
+        "separator_hMQ4C4"
+      ],
+      "settings": {
+        "layout": "default",
+        "use_surface_color_for_bg": true,
+        "show_divider": true,
+        "gallery_type": "slideshow_thumbs_bottom",
+        "gallery_position": "left",
+        "gallery_width": 56,
+        "enable_image_zoom": true,
+        "autoplay_video": false,
+        "image_expand": true,
+        "sticky_add_to_cart": true,
+        "sticky_add_to_cart_position": "bottom",
+        "enable_share_button": true,
+        "use_brand_colors": true,
+        "show_product_specs": false,
+        "product_specs": "<p>Brand: {{ product.vendor }}<\/p><p>Title: {{ product.title }}<\/p>",
+        "specs_use_expand": true,
+        "show_product_bundle": true,
+        "product_bundle_heading": "Buy together & save",
+        "product_bundle_variant_selector": false
+      }
+    },
+    "bf68ff39-3604-4104-bb9e-9f41dfaedaca": {
+      "type": "d_product-description",
+      "disabled": true,
+      "settings": {
+        "heading": "Product information",
+        "subheading": "",
+        "content_width": 80,
+        "font_scale": 115,
+        "show_specs": false,
+        "specs": "<p>Brand: {{ product.vendor }}<\/p><p>Title: {{ product.title }}<\/p>",
+        "specs_position": "right"
+      }
+    },
+    "754f7702-d82c-416d-89df-63c5feec689a": {
+      "type": "d_compare-products",
+      "blocks": {
+        "template--15265575993378__754f7702-d82c-416d-89df-63c5feec689a-price-1": {
+          "type": "price",
+          "settings": {
+            "enlarge": true
+          }
+        },
+        "template--15265575993378__754f7702-d82c-416d-89df-63c5feec689a-rating-1": {
+          "type": "rating",
+          "settings": {
+            "hide_no_match": true
+          }
+        },
+        "template--15265575993378__754f7702-d82c-416d-89df-63c5feec689a-vendor-1": {
+          "type": "vendor",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--15265575993378__754f7702-d82c-416d-89df-63c5feec689a-price-1",
+        "template--15265575993378__754f7702-d82c-416d-89df-63c5feec689a-rating-1",
+        "template--15265575993378__754f7702-d82c-416d-89df-63c5feec689a-vendor-1"
+      ],
+      "settings": {
+        "heading": "Compare with similar items",
+        "subheading": "",
+        "compare_products": [
+          "4pcs-stainless-steel-cutlery-set-dinnerware-set-western-tableware-classic-dinner-set-knife-fork-spoon-flatware-restaurant-dining",
+          "1000-8000-grit-bamboo-base-angle-guideset-kitchen-knife-sharpener-sharpening-stone-whetstone-grinding-stone",
+          "1000ml-ceramic-noodle-bowl-spoon-bowl-mat-with-cover-instant-noodle-bowl-korean-soup-bowl-rice-bowl-cutlery-set-white",
+          "13-piece-granite-pots-set-biyogranit-black-gold-rich-murfak-cookware-set-luxury-cookware-set"
+        ],
+        "show_stripes": true,
+        "show_main_product_accent": true,
+        "enable_product_title_truncation": true,
+        "product_title_max_lines": 2
+      }
+    },
+    "16554757745dec0af9": {
+      "type": "d_product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "Recommended for You",
+        "subheading": "",
+        "slide_every": "row",
+        "slides_per_view": 4,
+        "products_limit": 7
+      }
+    },
+    "d_hero_newsletter_aHGgq7": {
+      "type": "d_hero-newsletter",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image_size": "550px",
+        "mobile_image_size": "350px",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_image_with_text_7PwDDP": {
+      "type": "d_image-with-text",
+      "blocks": {
+        "subheading_p4qpxD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_kqQiWR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text heading",
+            "heading_scale": 120
+          }
+        },
+        "text_jY3mqM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the hero image or content on the template.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "buttons_Q7qRXm": {
+          "type": "buttons",
+          "settings": {
+            "info": "",
+            "f_button_label": "Find More",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_p4qpxD",
+        "heading_kqQiWR",
+        "text_jY3mqM",
+        "buttons_Q7qRXm"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image_size": "450px",
+        "mobile_image_size": "origin",
+        "image_width": 50,
+        "image_position": "left",
+        "text_position": "center-center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "d_image_with_text_xGbRVR": {
+      "type": "d_image-with-text",
+      "blocks": {
+        "subheading_bew6F6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_jBKUVq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text heading",
+            "heading_scale": 120
+          }
+        },
+        "text_rMdYNW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the hero image or content on the template.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "buttons_TA87Ja": {
+          "type": "buttons",
+          "settings": {
+            "info": "",
+            "f_button_label": "Find More",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_bew6F6",
+        "heading_jBKUVq",
+        "text_rMdYNW",
+        "buttons_TA87Ja"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image_size": "450px",
+        "mobile_image_size": "origin",
+        "image_width": 50,
+        "image_position": "right",
+        "text_position": "center-center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "blink"
+      }
+    },
+    "d_hero_image_LykaVH": {
+      "type": "d_hero-image",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image_size": "550px",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_rich_text_mEQyGJ": {
+      "type": "d_rich-text",
+      "blocks": {
+        "heading_tnB6Bg": {
+          "type": "heading",
+          "settings": {
+            "heading": "INFLAMMATION IN CHRONIC DISEASES",
+            "heading_scale": 100
+          }
+        },
+        "text_wmbbDx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you suffer from arthritis pain, an ankle sprain, a muscle strain, or an injury to the knee, wrist or back, red light therapy can help to reduce inflammation and bring much needed pain relief.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_tnB6Bg",
+        "text_wmbbDx"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "content_width": 100,
+        "text_align": "center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "d_slideshow_QmWyG3": {
+      "type": "d_slideshow",
+      "blocks": {
+        "slide_UCQjdA": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "accent2",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel02.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_2.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Lower back pain",
+            "heading_scale": 105,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_Xp9RNA": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "accent2",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel03_f75e8a98-77b6-430b-82d4-b01a6083cdcb.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_3.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Knee rheumatism",
+            "heading_scale": 105,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_PBKmBQ": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "accent2",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel01.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_4.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "cervical pain",
+            "heading_scale": 105,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_wmrxqF": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "accent2",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel04.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_5.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Hand tendinitis",
+            "heading_scale": 105,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UCQjdA",
+        "slide_Xp9RNA",
+        "slide_PBKmBQ",
+        "slide_wmrxqF"
+      ],
+      "settings": {
+        "section_layout": "container",
+        "image_size": "750px",
+        "mobile_image_size": "100vh",
+        "mobile_offset": false,
+        "show_arrows_navigation": false,
+        "show_pagination": true,
+        "enable_autoplay": true,
+        "autoplay": 5,
+        "animated_caption": false,
+        "mobile_hidden": false
+      }
+    },
+    "d_rich_text_eYc8LR": {
+      "type": "d_rich-text",
+      "blocks": {
+        "heading_tUV9KG": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIFFICULTY FALLING ASLEEP",
+            "heading_scale": 100
+          }
+        },
+        "text_rQnmnX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stimulates dopamine secretion and helps your brain fall asleep faster.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tUV9KG",
+        "text_rQnmnX"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "content_width": 100,
+        "text_align": "center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "d_slideshow_knMd4f": {
+      "type": "d_slideshow",
+      "blocks": {
+        "slide_ENURUj": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "accent2",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel06_1.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_6.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Improve sleep",
+            "heading_scale": 105,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_ckm4zP": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "accent2",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel06_2.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_7.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Regulate your emotions",
+            "heading_scale": 105,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ENURUj",
+        "slide_ckm4zP"
+      ],
+      "settings": {
+        "section_layout": "container",
+        "image_size": "750px",
+        "mobile_image_size": "100vh",
+        "mobile_offset": false,
+        "show_arrows_navigation": false,
+        "show_pagination": true,
+        "enable_autoplay": true,
+        "autoplay": 5,
+        "animated_caption": false,
+        "mobile_hidden": false
+      }
+    },
+    "d_rich_text_MgVLp3": {
+      "type": "d_rich-text",
+      "blocks": {
+        "heading_rkTzjG": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE TWO BANDWIDTHS AND ADJUSTABLE BRIGHTNESS SETTING'S, ARE HIGHLIGHT OF UNIT",
+            "heading_scale": 105
+          }
+        }
+      },
+      "block_order": [
+        "heading_rkTzjG"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "content_width": 100,
+        "text_align": "center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "d_slideshow_pnJxiP": {
+      "type": "d_slideshow",
+      "blocks": {
+        "slide_nW6BJg": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel06_3.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_8.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "",
+            "heading_scale": 120,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_LVHXf7": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel06_4.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_9.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "",
+            "heading_scale": 120,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_B6Di7q": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify:\/\/shop_images\/prungo_red_light_therapy_panel06_5.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Prungo_Red_light_therpay_panel_1.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "",
+            "heading_scale": 120,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_nW6BJg",
+        "slide_LVHXf7",
+        "slide_B6Di7q"
+      ],
+      "settings": {
+        "section_layout": "container",
+        "image_size": "650px",
+        "mobile_image_size": "100vh",
+        "mobile_offset": false,
+        "show_arrows_navigation": false,
+        "show_pagination": true,
+        "enable_autoplay": true,
+        "autoplay": 5,
+        "animated_caption": false,
+        "mobile_hidden": false
+      }
+    },
+    "171582668557029bff": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_YN6yQM": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_YN6yQM"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      }
+    }
+  },
+  "order": [
+    "1649081791eb3a0c3d",
+    "main",
+    "bf68ff39-3604-4104-bb9e-9f41dfaedaca",
+    "754f7702-d82c-416d-89df-63c5feec689a",
+    "16554757745dec0af9",
+    "d_hero_newsletter_aHGgq7",
+    "d_image_with_text_7PwDDP",
+    "d_image_with_text_xGbRVR",
+    "d_hero_image_LykaVH",
+    "d_rich_text_mEQyGJ",
+    "d_slideshow_QmWyG3",
+    "d_rich_text_eYc8LR",
+    "d_slideshow_knMd4f",
+    "d_rich_text_MgVLp3",
+    "d_slideshow_pnJxiP",
+    "171582668557029bff"
+  ]
+}

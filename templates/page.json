@@ -1,0 +1,167 @@
+{
+  "sections": {
+    "header": {
+      "type": "s_page-header",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent",
+        "image_size": "250px",
+        "mobile_image_size": "250px",
+        "bg_image_overlay": 30,
+        "text_position": "inside",
+        "custom_text": ""
+      }
+    },
+    "main": {
+      "type": "s_page",
+      "disabled": true,
+      "settings": {
+        "content_width": 80,
+        "font_scale": 100
+      }
+    },
+    "d_page_content_WrgYeX": {
+      "type": "d_page-content",
+      "disabled": true,
+      "settings": {
+        "section_layout": "default",
+        "page": "",
+        "font_scale": 100,
+        "text_align": "center"
+      }
+    },
+    "d_slideshow_3YR4Kd": {
+      "type": "d_slideshow",
+      "blocks": {
+        "slide_6799xD": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify:\/\/shop_images\/run_from_pain_prungo.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "",
+            "heading_scale": 120,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-center",
+            "use_box": false,
+            "f_button_label": "",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6799xD"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_layout": "full",
+        "image_size": "100vh",
+        "mobile_image_size": "550px",
+        "mobile_offset": false,
+        "show_arrows_navigation": false,
+        "show_pagination": true,
+        "enable_autoplay": true,
+        "autoplay": 5,
+        "animated_caption": false,
+        "mobile_hidden": false
+      }
+    },
+    "d_rich_text_tmEnTA": {
+      "type": "d_rich-text",
+      "blocks": {
+        "heading_4NxehH": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>A Message From Founder & CEO<\/strong>",
+            "heading_scale": 120
+          }
+        }
+      },
+      "block_order": [
+        "heading_4NxehH"
+      ],
+      "settings": {
+        "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+        "content_width": 100,
+        "text_align": "center",
+        "pattern": "none",
+        "pattern_scale": 100,
+        "pattern_animation": "none"
+      }
+    },
+    "d_hero_image_BdjPpa": {
+      "type": "d_hero-image",
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image": "shopify:\/\/shop_images\/A_Message_From_Founder_CEO_prungo2.webp",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_hero_image_pAhGcT": {
+      "type": "d_hero-image",
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image": "shopify:\/\/shop_images\/A_Message_From_Founder_CEO_prungo1.webp",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_hero_image_z7nMT7": {
+      "type": "d_hero-image",
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image": "shopify:\/\/shop_images\/05_01116f34-a5ff-4c5a-b86f-531dcf48abef.png",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_hero_image_Cdreaa": {
+      "type": "d_hero-image",
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image": "shopify:\/\/shop_images\/Run_from_Pain_Go_Towards_Freedom_prungo.webp",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    }
+  },
+  "order": [
+    "header",
+    "main",
+    "d_page_content_WrgYeX",
+    "d_slideshow_3YR4Kd",
+    "d_rich_text_tmEnTA",
+    "d_hero_image_BdjPpa",
+    "d_hero_image_pAhGcT",
+    "d_hero_image_z7nMT7",
+    "d_hero_image_Cdreaa"
+  ]
+}

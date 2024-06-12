@@ -1,0 +1,722 @@
+{
+  "sections": {
+    "d_slideshow_ExJepb": {
+      "type": "d_slideshow",
+      "blocks": {
+        "slide_KxBQNm": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "invert",
+            "image": "shopify:\/\/shop_images\/NATURAL_PAIN_RELIEF_prungo_d620444f-4eb7-43e0-ae1f-0c6eae7329dd.webp",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "",
+            "heading_scale": 120,
+            "subheading": "",
+            "text": "",
+            "text_position": "center-left",
+            "use_box": false,
+            "f_button_label": "Shop now",
+            "f_button_link": "shopify:\/\/products\/prungo-red-light-therapy-moudule",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_F93dXQ": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-d5bfcb37-c563-455f-adb0-90309a8dbf7b",
+            "image": "shopify:\/\/shop_images\/02_a9a3f418-f68d-4578-8c01-ede569a4727f.png",
+            "mobile_image": "shopify:\/\/shop_images\/02_e82d6218-91bc-43c5-9ba0-88d9f581e912.png",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Prungo Red Light Therapy <strong>Module<\/strong>",
+            "heading_scale": 100,
+            "subheading": "Natural Pain Relief",
+            "text": "<p>Relief from chronic inflammatory pain—Your trusted pain management expert！<\/p>",
+            "text_position": "center-left",
+            "use_box": false,
+            "f_button_label": "Shop now",
+            "f_button_link": "shopify:\/\/products\/prungo-red-light-therapy-moudule",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        },
+        "slide_kjJEya": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "scheme-d5bfcb37-c563-455f-adb0-90309a8dbf7b",
+            "image": "shopify:\/\/shop_images\/01_2af45bc6-a8bd-4bf7-93ff-eb069d3586c9.png",
+            "mobile_image": "shopify:\/\/shop_images\/01_37e89183-e564-42ed-9d25-89a53fd50518.png",
+            "overlay": 0,
+            "icon": "none",
+            "icon_scale": 100,
+            "heading": "Prungo <strong>Module<\/strong>",
+            "heading_scale": 100,
+            "subheading": "",
+            "text": "<p>We are dedicated to developing the world's top-notch polarized red light technology, providing users with a unique and efficient pain management solution.<\/p>",
+            "text_position": "center-left",
+            "use_box": false,
+            "f_button_label": "Shop now",
+            "f_button_link": "shopify:\/\/products\/prungo-red-light-therapy-moudule",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KxBQNm",
+        "slide_F93dXQ",
+        "slide_kjJEya"
+      ],
+      "settings": {
+        "section_layout": "full",
+        "image_size": "750px",
+        "mobile_image_size": "450px",
+        "mobile_offset": false,
+        "show_arrows_navigation": true,
+        "show_pagination": true,
+        "enable_autoplay": true,
+        "autoplay": 5,
+        "animated_caption": true,
+        "mobile_hidden": true
+      }
+    },
+    "d_promo_banner_8jJx6b": {
+      "type": "d_promo-banner",
+      "blocks": {
+        "heading_3rGQxN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Prungo",
+            "heading_scale": 115,
+            "subheading": ""
+          }
+        },
+        "text_gtNDEG": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Run from Pain, Go Towards Freedom.<\/strong><\/p>"
+          }
+        },
+        "button_zTaBWA": {
+          "type": "button",
+          "settings": {
+            "mobile_hidden": false,
+            "label": "Shop Now",
+            "link": "shopify:\/\/products\/prungo-red-light-therapy-moudule",
+            "tier": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3rGQxN",
+        "text_gtNDEG",
+        "button_zTaBWA"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "container",
+        "desktop_text_align": "center",
+        "link": "",
+        "pattern": "none",
+        "pattern_scale": 90,
+        "pattern_animation": "none"
+      }
+    },
+    "ae91ca31-4b2d-4ad0-9858-1f86988eb9cb": {
+      "type": "d_hero-background-video",
+      "blocks": {
+        "template--15265576648738__ae91ca31-4b2d-4ad0-9858-1f86988eb9cb-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "subheading": ""
+          }
+        },
+        "template--15265576648738__ae91ca31-4b2d-4ad0-9858-1f86988eb9cb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_scale": 190
+          }
+        }
+      },
+      "block_order": [
+        "template--15265576648738__ae91ca31-4b2d-4ad0-9858-1f86988eb9cb-subheading-1",
+        "template--15265576648738__ae91ca31-4b2d-4ad0-9858-1f86988eb9cb-heading-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+        "section_layout": "full",
+        "embedded_video": "",
+        "overlay": 0,
+        "image_size": "750px",
+        "mobile_image_size": "origin",
+        "display_desktop_only": false,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_hero_image_gGTNAn": {
+      "type": "d_hero-image",
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image": "shopify:\/\/shop_images\/94b3a2575d566344bb7551459297a705.png",
+        "image_size": "100vh",
+        "mobile_image": "shopify:\/\/shop_images\/11.png",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_hero_image_T3LF9P": {
+      "type": "d_hero-image",
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image": "shopify:\/\/shop_images\/prungo_cooperative_brand.webp",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_featured_product_TN3wPE": {
+      "type": "d_featured-product",
+      "blocks": {
+        "title_76fBTQ": {
+          "type": "title",
+          "settings": {
+            "heading_scale": 120,
+            "enable_text_truncation": false,
+            "max_lines": 3,
+            "badges_display": "before",
+            "badges_scale": 100,
+            "prev_attach": false
+          }
+        },
+        "price_f9bWij": {
+          "type": "price",
+          "settings": {
+            "show_savings": true,
+            "text_scale": 300,
+            "bold_text": true,
+            "show_taxes": true,
+            "prev_attach": false
+          }
+        },
+        "stock_alert_9EdptB": {
+          "type": "stock_alert",
+          "settings": {
+            "prev_attach": false
+          }
+        },
+        "countdown_7X7d7y": {
+          "type": "countdown",
+          "settings": {
+            "meta_heading": "Sale ends in:",
+            "text_scale": 175,
+            "use_sale_price_color": true,
+            "prev_attach": false
+          }
+        },
+        "quantity_selector_PcTgLz": {
+          "type": "quantity_selector",
+          "settings": {
+            "input_type": "input",
+            "prev_attach": true
+          }
+        },
+        "variant_selector_KnFqtg": {
+          "type": "variant_selector",
+          "settings": {
+            "picker_type": "swatch",
+            "show_variant_image": "none",
+            "color_swatches": false,
+            "price_display": "diff",
+            "swatches_grid_columns": "auto",
+            "show_stock_alert": false,
+            "prev_attach": false
+          }
+        },
+        "buy_buttons_w3RT3e": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "enable_stock_notifier": true,
+            "show_payment_methods": true,
+            "show_gift_card_recipient": false,
+            "prev_attach": false
+          }
+        },
+        "share_FkjCdK": {
+          "type": "share",
+          "settings": {
+            "meta_heading": "",
+            "use_colors": false,
+            "prev_attach": false
+          }
+        },
+        "separator_YTpH3N": {
+          "type": "separator",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_76fBTQ",
+        "price_f9bWij",
+        "stock_alert_9EdptB",
+        "countdown_7X7d7y",
+        "quantity_selector_PcTgLz",
+        "variant_selector_KnFqtg",
+        "buy_buttons_w3RT3e",
+        "share_FkjCdK",
+        "separator_YTpH3N"
+      ],
+      "settings": {
+        "product": "prungo-red-light-therapy-moudule",
+        "use_surface_color_for_bg": true,
+        "gallery_width": 50,
+        "enable_image_zoom": false,
+        "autoplay_video": false,
+        "image_expand": false
+      }
+    },
+    "d_testimonials_LWPY3q": {
+      "type": "d_testimonials",
+      "blocks": {
+        "testimonial_3WY89D": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Matt",
+            "heading": "I Have Just Experienced an Incredible Transformation Beyond My Expectations.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_GziHmf": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Ni C.",
+            "heading": "Impressive Results from an Outstanding Product.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_hMRhUb": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Bo",
+            "heading": "Product Functions as Advertised, Though Results Took Some Time to Notice.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_hXhHKM": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Mercedes",
+            "heading": "Investing in the Prungo Module was a wise decision for me.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_UrqJeR": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Peter",
+            "heading": "The Prungo Module Exceeded My Expectations !!",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_XUfDL7": {
+          "type": "testimonial",
+          "settings": {
+            "author_name": "Vytenis Z.",
+            "heading": "I love my PRUNGO module. Highly recommend.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_3WY89D",
+        "testimonial_GziHmf",
+        "testimonial_hMRhUb",
+        "testimonial_hXhHKM",
+        "testimonial_UrqJeR",
+        "testimonial_XUfDL7"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<strong>Customers' Voices<\/strong>",
+        "subheading": "",
+        "slides_per_view": 4,
+        "show_stars": true,
+        "section_button_label": "",
+        "section_button_link": ""
+      }
+    },
+    "d_moving_testimonials_YwD6Qx": {
+      "type": "d_moving_testimonials",
+      "blocks": {
+        "testimonial_iBtCTJ": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_3.png",
+            "author_name": "Matt",
+            "heading": "I Have Just Experienced an Incredible Transformation Beyond My Expectations.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_PB7rjP": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_7.png",
+            "author_name": "Ni C.",
+            "heading": "Impressive Results from an Outstanding Product.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_fVwHnG": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_5.png",
+            "author_name": "Bo",
+            "heading": "Product Functions as Advertised, Though Results Took Some Time to Notice.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_7piinB": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_6.png",
+            "author_name": "Mercedes",
+            "heading": "Investing in the Prungo Module was a wise decision for me.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_iBtCTJ",
+        "testimonial_PB7rjP",
+        "testimonial_fVwHnG",
+        "testimonial_7piinB"
+      ],
+      "settings": {
+        "heading": "<strong>Customers' Voices<\/strong>",
+        "subheading": "",
+        "view_max_items": 5,
+        "show_stars": true,
+        "stop_on_hover": true,
+        "moving_direction": "normal",
+        "speed_mult": "2",
+        "section_button_label": "",
+        "section_button_link": ""
+      }
+    },
+    "d_moving_testimonials_iA7xGK": {
+      "type": "d_moving_testimonials",
+      "blocks": {
+        "testimonial_DVMJH4": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_1.png",
+            "author_name": "Peter",
+            "heading": "At 67, Following My Rheumatologist's Advice to Try PRUNGO Red Light Therapy: 30 Days In, I'm Thrilled with the Results and Wishing I'd Discovered This Sooner!",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_Enfepe": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_8.png",
+            "author_name": "Vytenis Z.",
+            "heading": "An Awesome High-End Red Light Therapy Device: Easy-to-Use, Versatile Design, and Noticeable Benefits That Make Me Feel Better Every Time I Use It.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_cJQEmg": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_2.png",
+            "author_name": "Willy",
+            "heading": "At 40, I Felt Like I Was Falling Apart with Tendon Injuries, a Pulverized Meniscus, and Osteoarthritis Pains – But After 7 Days of Using PRUNGO, I'm Finally Feeling Some Relief",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        },
+        "testimonial_PmahBG": {
+          "type": "testimonial",
+          "settings": {
+            "author_image": "shopify:\/\/shop_images\/custom_review01_4.png",
+            "author_name": "Pamela G.",
+            "heading": "My Son Suffered from Severe Pain and Swelling, but After Using PRUNGO Red Light Therapy, His Pain is Gradually Disappearing and He Feels Much Better Every Day.",
+            "text": "",
+            "star_count": "5",
+            "product": "prungo-red-light-therapy-moudule"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_DVMJH4",
+        "testimonial_Enfepe",
+        "testimonial_cJQEmg",
+        "testimonial_PmahBG"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "view_max_items": 5,
+        "show_stars": true,
+        "stop_on_hover": true,
+        "moving_direction": "reverse",
+        "speed_mult": "2",
+        "section_button_label": "",
+        "section_button_link": ""
+      }
+    },
+    "d_icon_features_6nrped": {
+      "type": "d_icon-features",
+      "blocks": {
+        "feature_H3GTDt": {
+          "type": "feature",
+          "settings": {
+            "icon": "star",
+            "image": "shopify:\/\/shop_images\/shipping_logo-prungo.webp",
+            "crop_image": false,
+            "heading": "Free Expedited Shipping",
+            "text": "",
+            "link": ""
+          }
+        },
+        "feature_nUHRTb": {
+          "type": "feature",
+          "settings": {
+            "icon": "star",
+            "image": "shopify:\/\/shop_images\/warranty_logo-prungo_909134e2-2d5a-42a3-8bc4-273e4e5b03a3.webp",
+            "crop_image": true,
+            "heading": "2-Year Warranty",
+            "text": "",
+            "link": ""
+          }
+        },
+        "feature_W8PyWC": {
+          "type": "feature",
+          "settings": {
+            "icon": "star",
+            "image": "shopify:\/\/shop_images\/Quality_Scientific_Support_logo-prungo.webp",
+            "crop_image": true,
+            "heading": "Quality & Scientific Support",
+            "text": "",
+            "link": ""
+          }
+        },
+        "feature_dkYabJ": {
+          "type": "feature",
+          "settings": {
+            "icon": "star",
+            "image": "shopify:\/\/shop_images\/Secure_Payments_Options_logo-prungo.webp",
+            "crop_image": true,
+            "heading": "Secure Payments & Options",
+            "text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_H3GTDt",
+        "feature_nUHRTb",
+        "feature_W8PyWC",
+        "feature_dkYabJ"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+        "section_text_align": "left",
+        "pattern": "none",
+        "pattern_scale": 200,
+        "pattern_animation": "blink",
+        "enable_round_media": false,
+        "media_size": 95,
+        "heading_scale": 50
+      }
+    },
+    "d_hero_image_ThkUwq": {
+      "type": "d_hero-image",
+      "blocks": {
+        "subheading_489PCi": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_pgLmCj": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Hero Image Heading",
+            "heading_scale": 120
+          }
+        },
+        "text_7RPGbz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the hero image or content on the template.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "buttons_BPbU7x": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "mobile_hidden": false,
+            "info": "",
+            "f_button_label": "Shop Now",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_489PCi",
+        "heading_pgLmCj",
+        "text_7RPGbz",
+        "buttons_BPbU7x"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "section_layout": "full",
+        "image": "shopify:\/\/shop_images\/choose_prungo_bf6d7ffd-c8a9-44c0-ae0a-fa5252bf6808.webp",
+        "image_size": "origin",
+        "mobile_image_size": "origin",
+        "overlay": 0,
+        "use_box": false,
+        "text_position": "center-center",
+        "mobile_offset": false
+      }
+    },
+    "d_image_with_text_QmHj8T": {
+      "type": "d_image-with-text",
+      "blocks": {
+        "heading_MFX9zn": {
+          "type": "heading",
+          "settings": {
+            "heading": "HONORING HEROES & SUPPORTING THEIR JOURNEY TO COMFORT AND RECOVERY!",
+            "heading_scale": 80
+          }
+        },
+        "text_fKTNch": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>PRUNGO proudly supports our veterans—— We believe in giving back to those who have served our country. We're committed to quality care and charitable initiatives. Aim to help alleviate chronic inflammation and pain, Caring for their health and well-being.<\/h5>",
+            "enlarge_text": true
+          }
+        },
+        "buttons_zkVqzQ": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "info": "",
+            "f_button_label": "Find More",
+            "f_button_link": "",
+            "f_button_tier": "primary",
+            "s_button_label": "",
+            "s_button_link": "",
+            "s_button_tier": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MFX9zn",
+        "text_fKTNch",
+        "buttons_zkVqzQ"
+      ],
+      "settings": {
+        "color_scheme": "accent",
+        "section_layout": "container",
+        "image": "shopify:\/\/shop_images\/crowd-prungo.webp",
+        "image_size": "550px",
+        "mobile_image_size": "origin",
+        "image_width": 50,
+        "image_position": "left",
+        "text_position": "center-center",
+        "pattern": "none",
+        "pattern_scale": 80,
+        "pattern_animation": "none"
+      }
+    },
+    "a7b36c59-b31d-47bb-a0fc-c8c86c47f6a8": {
+      "type": "d_featured-blog",
+      "settings": {
+        "heading": "Featured blog",
+        "subheading": "",
+        "blog": "medical-applications",
+        "show_date": false,
+        "show_author": false,
+        "tags_display": "first",
+        "image_size": "portrait",
+        "slide_every": "item",
+        "slides_per_view": 4,
+        "articles_limit": 9,
+        "section_button_label": ""
+      }
+    }
+  },
+  "order": [
+    "d_slideshow_ExJepb",
+    "d_promo_banner_8jJx6b",
+    "ae91ca31-4b2d-4ad0-9858-1f86988eb9cb",
+    "d_hero_image_gGTNAn",
+    "d_hero_image_T3LF9P",
+    "d_featured_product_TN3wPE",
+    "d_testimonials_LWPY3q",
+    "d_moving_testimonials_YwD6Qx",
+    "d_moving_testimonials_iA7xGK",
+    "d_icon_features_6nrped",
+    "d_hero_image_ThkUwq",
+    "d_image_with_text_QmHj8T",
+    "a7b36c59-b31d-47bb-a0fc-c8c86c47f6a8"
+  ]
+}

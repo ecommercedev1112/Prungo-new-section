@@ -1,0 +1,105 @@
+{
+  "sections": {
+    "header": {
+      "type": "s_blog-header",
+      "settings": {
+        "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+        "image_size": "250px",
+        "mobile_image_size": "250px",
+        "bg_image_overlay": 30,
+        "text_position": "inside",
+        "custom_text": ""
+      }
+    },
+    "1716284210af12def4": {
+      "type": "apps",
+      "blocks": {
+        "product_blog_tags_free_m8eXen": {
+          "type": "shopify:\/\/apps\/product-blog-tags\/blocks\/free\/67632605-1942-48ed-8754-52e0f58207d1",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_blog_tags_free_m8eXen"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      }
+    },
+    "main": {
+      "type": "s_blog",
+      "settings": {
+        "columns": 4,
+        "max_rows": 3,
+        "image_size": "portrait",
+        "show_date": false,
+        "show_author": false,
+        "hide_excerpt_mobile": false,
+        "tags_display": "first",
+        "mobile_cards_display": "cards"
+      }
+    },
+    "d_featured_blog_UQgBaR": {
+      "type": "d_featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "Featured blog",
+        "subheading": "",
+        "blog": "medical-applications",
+        "show_date": false,
+        "show_author": false,
+        "tags_display": "first",
+        "image_size": "portrait",
+        "slide_every": "row",
+        "slides_per_view": 4,
+        "articles_limit": 6,
+        "section_button_label": ""
+      }
+    },
+    "d_product_slideshow_f3aWda": {
+      "type": "d_product-slideshow",
+      "blocks": {
+        "product_pFCjGQ": {
+          "type": "product",
+          "settings": {
+            "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+            "product": "prungo-red-light-therapy-moudule",
+            "overlay": 0,
+            "pattern": "none",
+            "pattern_scale": 100,
+            "pattern_animation": "none",
+            "heading": "PRUNGO <strong>MODULE<\/strong>",
+            "heading_scale": 120,
+            "subheading": "",
+            "text": "<p>The Prungo Module effectively alleviates joint pain, reduces inflammation, and promotes the healing of damaged tissues.<\/p>",
+            "text_position": "center-center",
+            "f_button_label": "Shop now",
+            "f_button_link": "",
+            "f_button_tier": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "product_pFCjGQ"
+      ],
+      "settings": {
+        "section_layout": "full",
+        "section_height": "550px",
+        "image_position": "right",
+        "show_arrows_navigation": false,
+        "show_pagination": false,
+        "enable_autoplay": true,
+        "autoplay": 5,
+        "animated_caption": false
+      }
+    }
+  },
+  "order": [
+    "header",
+    "1716284210af12def4",
+    "main",
+    "d_featured_blog_UQgBaR",
+    "d_product_slideshow_f3aWda"
+  ]
+}

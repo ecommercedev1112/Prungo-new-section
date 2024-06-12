@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "main": {
+      "type": "s_cart",
+      "blocks": {
+        "5c7e55ff-1da3-4815-97fb-edf0f474fdf3": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "37a05ef7-5d88-4b25-8014-bb7828173e7c": {
+          "type": "tax_note",
+          "settings": {}
+        },
+        "free_shipping_qL6njf": {
+          "type": "free_shipping",
+          "settings": {}
+        },
+        "29673dda-2b86-4bd0-8dea-fd65dda561be": {
+          "type": "order_notes",
+          "settings": {
+            "default_state": "opened"
+          }
+        },
+        "7daae28e-954a-4d5d-bdac-d5e8b1527aa3": {
+          "type": "checkout",
+          "settings": {
+            "show_payment_methods": true,
+            "show_additional_checkout_buttons": true
+          }
+        }
+      },
+      "block_order": [
+        "5c7e55ff-1da3-4815-97fb-edf0f474fdf3",
+        "37a05ef7-5d88-4b25-8014-bb7828173e7c",
+        "free_shipping_qL6njf",
+        "29673dda-2b86-4bd0-8dea-fd65dda561be",
+        "7daae28e-954a-4d5d-bdac-d5e8b1527aa3"
+      ],
+      "settings": {
+        "heading": "Your cart",
+        "show_stock_alert": false
+      }
+    },
+    "d_faq_mbxtM7": {
+      "type": "d_faq",
+      "blocks": {
+        "question_qwMh8Q": {
+          "type": "question",
+          "settings": {
+            "heading": "Frequently asked question",
+            "icon": "none",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "question_znr3hm": {
+          "type": "question",
+          "settings": {
+            "heading": "Frequently asked question",
+            "icon": "none",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "question_z9jxr3": {
+          "type": "question",
+          "settings": {
+            "heading": "Frequently asked question",
+            "icon": "none",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_qwMh8Q",
+        "question_znr3hm",
+        "question_z9jxr3"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "FAQ",
+        "subheading": "",
+        "content_width": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d_faq_mbxtM7"
+  ]
+}

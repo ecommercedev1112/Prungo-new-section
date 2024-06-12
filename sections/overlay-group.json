@@ -1,0 +1,129 @@
+{
+  "type": "custom.overlay",
+  "name": "Overlay Group",
+  "sections": {
+    "cart_drawer": {
+      "type": "g_cart-drawer",
+      "blocks": {
+        "banner_Y3B9Ce": {
+          "type": "banner",
+          "settings": {
+            "color_scheme": "scheme-44a2fd73-a4f5-4cf2-9877-ff75a78abe59",
+            "image": "shopify:\/\/shop_images\/logo1-prungo.webp",
+            "full_width": false,
+            "heading": "",
+            "subheading": "",
+            "text_position": "center-center",
+            "link": ""
+          }
+        },
+        "products": {
+          "type": "products",
+          "settings": {
+            "show_remove_button": true
+          }
+        },
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "product_recommendations_f9tBQy": {
+          "type": "product_recommendations",
+          "settings": {
+            "heading": "You may interested in",
+            "fallback_products": [
+              "prungo-red-light-therapy-moudule",
+              "red-light-therapy-device-black-1",
+              "red-light-therapy-device-black",
+              "red-light-therapy-device-purple"
+            ]
+          }
+        },
+        "free_shipping_DTfUXY": {
+          "type": "free_shipping",
+          "settings": {}
+        },
+        "order_notes_ekBtxC": {
+          "type": "order_notes",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "banner_Y3B9Ce",
+        "products",
+        "subtotal",
+        "product_recommendations_f9tBQy",
+        "free_shipping_DTfUXY",
+        "order_notes_ekBtxC"
+      ],
+      "settings": {
+        "show_final_price_checkout_button": true,
+        "show_stock_alert": true,
+        "checkout_position": "top",
+        "show_cart_counter": true
+      }
+    },
+    "g_cart_notification_rCJiVJ": {
+      "type": "g_cart-notification",
+      "blocks": {
+        "free_shipping_bar_B9fqHt": {
+          "type": "free_shipping_bar",
+          "settings": {}
+        },
+        "recommendations_ixiEnq": {
+          "type": "recommendations",
+          "settings": {
+            "heading": "You might also like"
+          }
+        }
+      },
+      "block_order": [
+        "free_shipping_bar_B9fqHt",
+        "recommendations_ixiEnq"
+      ],
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "g_newsletter-popup",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Be the first to know about new collections and exclusive offers."
+          }
+        },
+        "form": {
+          "type": "newsletter_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "form"
+      ],
+      "disabled": true,
+      "settings": {
+        "new_customers_only": false,
+        "color_scheme": "",
+        "display_delay_sec": 3,
+        "days_to_re_appear": 1,
+        "popup_position": "center-center",
+        "image": "shopify:\/\/shop_images\/core-strength-fitness.jpg",
+        "image_position": "left",
+        "image_overlay": 50
+      }
+    }
+  },
+  "order": [
+    "cart_drawer",
+    "g_cart_notification_rCJiVJ",
+    "newsletter"
+  ]
+}
