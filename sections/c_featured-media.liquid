@@ -1,0 +1,318 @@
+{% style %}
+.custom-featured-media .featured-media-wrapper {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+
+.featured-media-wrapper {
+    position: relative;
+}
+.section-media .prev-arrow {
+    position: absolute;
+    top: 50%;
+    left: -26.5px;
+}
+.section-media .next-arrow {
+    position: absolute;
+    top: 50%;
+    right: -26.5px;
+}
+.slick-slide {
+    text-align:center;
+    margin-right:12px;
+    margin-left:12px;
+}
+.slick-dots li button {
+    background: #EDFBFB;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active button::before {
+    color: #42D59A;
+    opacity: 1;
+    font-size: 60px;
+}
+.slick-dots {
+    bottom: -40px;
+}
+.slick-dots li button::before {
+    color: #fff;
+}
+@media(max-width: 768px) {
+    .custom-featured-media .featured-media-wrapper {
+        padding-top: {{ section.settings.mobile_padding_top }}px;
+        padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }   
+    .slick-slide {
+        width: 75vw !important;
+    }
+}
+{% endstyle %}
+
+<script src="{{ 'c_custom-slider.js' | asset_url }}" defer="defer"></script>
+
+
+<div class="featured-media-wrapper custom-page-width" data-image-count="{{section.settings.image_count}}">
+    <div class="section-header">
+        <h2 class="title desktop">{{ section.settings.title_desktop }}</h2>
+        <h2 class="title mobile">{{ section.settings.title_mobile }}</h2>
+        <p class="subtitle">{{ section.settings.subtitle }}</p>
+    </div>
+    {% for block in section.blocks %}
+        {% assign index = forloop.index %}
+    {% endfor %}
+    <div class="desktop section-media {% if index > section.settings.image_count %} custom-slider{% endif %}">
+        {% for block in section.blocks %}
+            <div class="media-item">
+                {% case block.type %}
+                    {% when 'image' %}
+                        <img src="{{ block.settings.gallery_image | img_url: 'medium'}}" alt="image" class="lazy">
+                         <div class="gallery-content">
+                            <p class="gallery-image-title">{{ block.settings.title }}</p>
+                            <p class="gallery-image-content"> {{ block.settings.content }}</p>
+                        </div>
+                    {% when 'media' %}
+                        {%- assign html_video = block.settings.video -%}
+                        {%- assign video_link = block.settings.video_link -%}
+
+                        {%- if video_link contains 'youtube.com/watch' -%}
+                        {%- assign video_id = video_link | split: 'v=' -%}
+                        {%- assign video_id = video_id[1] | split: '&' | first -%}
+                        {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                        {%- assign external_video = true -%}
+                        {%- elsif video_link contains 'youtu.be/' -%}
+                        {%- assign video_id = video_link | split: '.be/' -%}
+                        {%- assign video_id = video_id[1] | split: '&' | first -%}
+                        {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                        {%- assign external_video = true -%}
+                        {%- elsif video_link contains 'vimeo.com/' -%}
+                        {%- assign video_id = video_link | split: 'vimeo.com/' -%}
+                        {%- assign video_id = video_id[1] | split: '?' | first -%}
+                        {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
+                        {%- assign external_video = true -%}
+                        {%- endif -%}
+
+                        {%- if external_video -%}
+                            <iframe
+                            class="block absolute top-0 right-0 bottom-0 left-0 w-full h-full"
+                            src="{{ video_url }}"
+                            frameborder="0"
+                            allow="fullscreen"
+                            allowfullscreen>
+                            </iframe>
+                        {%- elsif html_video != blank -%}
+                            {{ html_video | video_tag: controls: true, preload: 'none', image_size: image_size, class: 'block absolute top-0 right-0 bottom-0 left-0 w-full h-full' }}
+                        {%- endif -%}
+
+                         <div class="gallery-content">
+                            <p class="gallery-image-title">{{ block.settings.title }}</p>
+                            <p class="gallery-image-content"> {{ block.settings.content }}</p>
+                        </div>
+                {% endcase %}
+            </div>
+           
+        {% endfor %}
+                
+    </div>
+    <div class="mobile section-media custom-slider">
+        {% for block in section.blocks %}
+            <div class="media-item">
+                {% case block.type %}
+                    {% when 'image' %}
+                        <img src="{{ block.settings.gallery_image | img_url: 'medium'}}" alt="image" class="lazy">
+                         <div class="gallery-content">
+                            <p class="gallery-image-title">{{ block.settings.title }}</p>
+                            <p class="gallery-image-content"> {{ block.settings.content }}</p>
+                        </div>
+                    {% when 'media' %}
+                        {%- assign html_video = block.settings.video -%}
+                        {%- assign video_link = block.settings.video_link -%}
+
+                        {%- if video_link contains 'youtube.com/watch' -%}
+                        {%- assign video_id = video_link | split: 'v=' -%}
+                        {%- assign video_id = video_id[1] | split: '&' | first -%}
+                        {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                        {%- assign external_video = true -%}
+                        {%- elsif video_link contains 'youtu.be/' -%}
+                        {%- assign video_id = video_link | split: '.be/' -%}
+                        {%- assign video_id = video_id[1] | split: '&' | first -%}
+                        {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                        {%- assign external_video = true -%}
+                        {%- elsif video_link contains 'vimeo.com/' -%}
+                        {%- assign video_id = video_link | split: 'vimeo.com/' -%}
+                        {%- assign video_id = video_id[1] | split: '?' | first -%}
+                        {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
+                        {%- assign external_video = true -%}
+                        {%- endif -%}
+
+                        {%- if external_video -%}
+                            <iframe
+                            class="block absolute top-0 right-0 bottom-0 left-0 w-full h-full"
+                            src="{{ video_url }}"
+                            frameborder="0"
+                            allow="fullscreen"
+                            allowfullscreen>
+                            </iframe>
+                        {%- elsif html_video != blank -%}
+                            {{ html_video | video_tag: controls: true, preload: 'none', image_size: image_size, class: 'block absolute top-0 right-0 bottom-0 left-0 w-full h-full' }}
+                        {%- endif -%}
+
+                         <div class="gallery-content">
+                            <p class="gallery-image-title">{{ block.settings.title }}</p>
+                            <p class="gallery-image-content"> {{ block.settings.content }}</p>
+                        </div>
+                {% endcase %}
+            </div>
+           
+        {% endfor %}
+                
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+{% schema %}
+    {
+        "name": "Custom featured media",
+        "class": "custom-featured-media",
+        "settings": [
+            {
+              "type": "header",
+              "content": "Heading"
+            },
+            {
+              "type": "text",
+              "id": "title_desktop",
+              "label": "Desktop Title"
+            },
+            {
+              "type": "richtext",
+              "id": "title_mobile",
+              "label": "Mobile Title"
+            },
+            {
+              "type": "text",
+              "id": "subtitle",
+              "label": "Sub title"
+            },
+            {
+                "type": "range",
+                "id": "image_count",
+                "min": 2,
+                "max": 4,
+                "step": 1,
+                "unit": "n",
+                "label": "Image count",
+                "default": 4
+            },
+            {
+              "type": "range",
+              "id": "padding_top",
+              "min": 0,
+              "max": 100,
+              "step": 10,
+              "unit": "px",
+              "label": "Padding top",
+              "default": 50 
+            },
+            {
+              "type": "range",
+              "id": "padding_bottom",
+              "min": 0,
+              "max": 100,
+              "step": 10,
+              "unit": "px",
+              "label": "Padding bottom",
+              "default": 50 
+            },
+            {
+              "type": "range",
+              "id": "mobile_padding_top",
+              "min": 0,
+              "max": 60,
+              "step": 10,
+              "unit": "px",
+              "label": "Mobile padding top",
+              "default": 40 
+            },
+            {
+              "type": "range",
+              "id": "mobile_padding_bottom",
+              "min": 0,
+              "max": 60,
+              "step": 10,
+              "unit": "px",
+              "label": "Mobile padding bottom",
+              "default": 40 
+            }
+        ],
+        "blocks": [
+          {
+            "name": "image",
+            "type": "image",
+            "settings": [
+               {
+                 "type": "image_picker",
+                 "id": "gallery_image",
+                 "label": "Image"
+               },
+               {
+                 "type": "text",
+                 "id": "title",
+                 "label": "Title"
+               },
+               {
+                 "type": "text",
+                 "id": "content",
+                 "label": "content"
+               }
+            ]
+          },
+          {
+            "name": "media",
+            "type": "media",
+            "settings": [
+               {
+                 "type": "video",
+                 "id": "video",
+                 "label": "Video"
+               },
+               {
+                    "type": "video_url",
+                    "id": "video_link",
+                    "label": "Video link",
+                    "accept": ["youtube", "vimeo"],
+                    "info": "Streaming video source from YouTube or Vimeo.",
+                    "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+                },
+               {
+                 "type": "text",
+                 "id": "title",
+                 "label": "Title"
+               },
+               {
+                 "type": "text",
+                 "id": "content",
+                 "label": "content"
+               }
+            ]
+          }
+        ],
+        "presets": [
+            {
+                "name": "Custom featured media",
+                "category": "Image",
+                "blocks": [
+                    {
+                        "type": "image"
+                    },
+                    {
+                        "type": "image"
+                    },
+                    {
+                        "type": "image"
+                    }                    
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}

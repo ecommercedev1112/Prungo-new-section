@@ -91,6 +91,50 @@
         "mobile_hidden": true
       }
     },
+    "c_featured_media_4PRJGk": {
+      "type": "c_featured-media",
+      "blocks": {
+        "image_y4NPFW": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        },
+        "image_8CXq7P": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column_1.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        },
+        "image_7AE9pQ": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column_2.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        }
+      },
+      "block_order": [
+        "image_y4NPFW",
+        "image_8CXq7P",
+        "image_7AE9pQ"
+      ],
+      "settings": {
+        "title_desktop": "Recommended By",
+        "title_mobile": "<p>Recommended By<\/p>",
+        "subtitle": "Chiropractic and pain rehabilitation physician specialist",
+        "image_count": 4,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
+      }
+    },
     "d_promo_banner_8jJx6b": {
       "type": "d_promo-banner",
       "blocks": {
@@ -181,6 +225,120 @@
         "use_box": false,
         "text_position": "center-center",
         "mobile_offset": false
+      }
+    },
+    "c_featured_image_text_emTAwC": {
+      "type": "c_featured-image-text",
+      "blocks": {
+        "image_gQXgCX": {
+          "type": "image",
+          "settings": {
+            "title": "Uses World-Leading Infrared Polarized Light Technology",
+            "content": "Infrared polarized light is called \"human optical window\" in the medical field, infrared polarized light makes up for the defects of infrared scattering, its light effect power is stronger, the effective irradiation depth is deeper, the curative effect is faster and more obvious.",
+            "image_desktop": "shopify:\/\/shop_images\/Image_-_Column_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/Image_-_Column_6.png",
+            "direction": "right"
+          }
+        },
+        "image_y4wzGM": {
+          "type": "image",
+          "settings": {
+            "title": "Uses World-Leading Infrared Polarized Light Technology",
+            "content": "Infrared polarized light is called \"human optical window\" in the medical field, infrared polarized light makes up for the defects of infrared scattering, its light effect power is stronger, the effective irradiation depth is deeper, the curative effect is faster and more obvious.",
+            "image_desktop": "shopify:\/\/shop_images\/Image_-_Column_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/Image_-_Column_6.png",
+            "direction": "left"
+          }
+        },
+        "image_K7bPeF": {
+          "type": "image",
+          "settings": {
+            "title": "Uses World-Leading Infrared Polarized Light Technology",
+            "content": "Infrared polarized light is called \"human optical window\" in the medical field, infrared polarized light makes up for the defects of infrared scattering, its light effect power is stronger, the effective irradiation depth is deeper, the curative effect is faster and more obvious.",
+            "image_desktop": "shopify:\/\/shop_images\/Image_-_Column_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/Image_-_Column_6.png",
+            "direction": "right"
+          }
+        }
+      },
+      "block_order": [
+        "image_gQXgCX",
+        "image_y4wzGM",
+        "image_K7bPeF"
+      ],
+      "settings": {
+        "title": "Recommended By",
+        "subtitle": "Chiropractic and pain rehabilitation physician specialist",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 0
+      }
+    },
+    "c_featured_media_gRTEwq": {
+      "type": "c_featured-media",
+      "blocks": {
+        "image_rQptjG": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        },
+        "image_8PaeDm": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column_1.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        },
+        "image_nUiHtn": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column_2.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        },
+        "image_w8q7NM": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column_4.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        },
+        "image_LhMVBB": {
+          "type": "image",
+          "settings": {
+            "gallery_image": "shopify:\/\/shop_images\/Image_-_Column_1.png",
+            "title": "Get Back To Doing What You Love",
+            "content": "Ultimately injury holds you back from doing what you love. Recover faster with the benefits of targetted red light therapy."
+          }
+        }
+      },
+      "block_order": [
+        "image_rQptjG",
+        "image_8PaeDm",
+        "image_nUiHtn",
+        "image_w8q7NM",
+        "image_LhMVBB"
+      ],
+      "custom_css": [
+        ".custom-featured-media .section-media .media-item {aspect-ratio: 0.72;}",
+        "@media (max-width: 768px) {.custom-featured-media .section-media .media-item {aspect-ratio: 0.7; } .slick-slide {width: 60vw !important; }}"
+      ],
+      "settings": {
+        "title_desktop": "Trusted by top medical professionals & rehabilitation therapists",
+        "title_mobile": "<p>Trusted by top medical<\/p><p>professionals &<\/p><p> rehabilitation<\/p><p> therapists<\/p>",
+        "subtitle": "The therapeutic effectiveness of PRUNGO modules is recognized and trusted by healthcare professionals,who have applied the products to a wide range of places where they work, helping thousands of users!",
+        "image_count": 4,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
       }
     },
     "d_hero_image_T3LF9P": {
@@ -296,6 +454,84 @@
         "enable_image_zoom": false,
         "autoplay_video": false,
         "image_expand": false
+      }
+    },
+    "c_featured_review_LzhFcR": {
+      "type": "c_featured-review",
+      "blocks": {
+        "review_prJ4Hq": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_-_Column_5.png",
+            "star_image": "shopify:\/\/shop_images\/Frame_27.png",
+            "name": "Mercedes",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_3.png",
+            "date": "2024-05-11 16:46:49",
+            "content": "Investing in the Prungo Module was a wise decision for me."
+          }
+        },
+        "review_rgPwrJ": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_-_Column_5.png",
+            "star_image": "shopify:\/\/shop_images\/Frame_27.png",
+            "name": "Ni C",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_3_1.png",
+            "date": "2024-05-11 16:46:49",
+            "content": "Impressive Results from an Outstanding Product."
+          }
+        },
+        "review_gQ4EnC": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_-_Column_5.png",
+            "star_image": "shopify:\/\/shop_images\/Frame_27.png",
+            "name": "Bo",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_3_2.png",
+            "date": "2024-05-11 16:46:49",
+            "content": "Product Functions as Advertised, Though Results Took Some Time to Notice."
+          }
+        },
+        "review_RcNfQp": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_-_Column_5.png",
+            "star_image": "shopify:\/\/shop_images\/Frame_27.png",
+            "name": "Matt",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_3_3.png",
+            "date": "2024-05-11 16:46:49",
+            "content": "I Have Just Experienced an Incredible Transformation Beyond My Expectations."
+          }
+        },
+        "review_kzmdKy": {
+          "type": "review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_-_Column_5.png",
+            "star_image": "shopify:\/\/shop_images\/Frame_27.png",
+            "name": "Ni C",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_3_1.png",
+            "date": "2024-05-11 16:46:49",
+            "content": "Impressive Results from an Outstanding Product."
+          }
+        }
+      },
+      "block_order": [
+        "review_prJ4Hq",
+        "review_rgPwrJ",
+        "review_gQ4EnC",
+        "review_RcNfQp",
+        "review_kzmdKy"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.slick-slide {width: 70vw !important; aspect-ratio: 0.64; }}"
+      ],
+      "settings": {
+        "title": "Customers' Voices",
+        "image_count": 4,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 40
       }
     },
     "d_testimonials_LWPY3q": {
@@ -706,11 +942,15 @@
   },
   "order": [
     "d_slideshow_ExJepb",
+    "c_featured_media_4PRJGk",
     "d_promo_banner_8jJx6b",
     "ae91ca31-4b2d-4ad0-9858-1f86988eb9cb",
     "d_hero_image_gGTNAn",
+    "c_featured_image_text_emTAwC",
+    "c_featured_media_gRTEwq",
     "d_hero_image_T3LF9P",
     "d_featured_product_TN3wPE",
+    "c_featured_review_LzhFcR",
     "d_testimonials_LWPY3q",
     "d_moving_testimonials_YwD6Qx",
     "d_moving_testimonials_iA7xGK",

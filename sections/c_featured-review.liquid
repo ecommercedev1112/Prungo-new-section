@@ -1,0 +1,181 @@
+{% style %}
+.custom-review-section {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+.section-review .prev-arrow {
+    position: absolute;
+    top: 45%;
+    left: -10px;
+    z-index: 999;
+}
+.section-review .next-arrow {
+    position: absolute;
+    top: 45%;
+    right: -10px;
+}
+
+@media(max-width: 768px) {
+    .custom-review-section {
+        padding-top: {{ section.settings.mobile_padding_top }}px;
+        padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    } 
+    .section-review .prev-arrow {
+        top: 40%;
+    }  
+    .section-review .next-arrow {
+        top: 40%;
+    }
+}
+
+{% endstyle %}
+
+<script src="{{ 'c_custom-slider_review.js' | asset_url }}" defer="defer"></script>
+
+<div class="custom-review-section" data-image-count="{{section.settings.image_count}}">
+    <div class="section-header">
+        <h2 class="title">{{ section.settings.title }}</h2>
+        <p class="subtitle">{{ section.settings.subtitle }}</p>
+    </div>
+    <div class="section-review custom-slider-review">
+        {% for block in section.blocks %}
+            <div class="item">
+                <div class="item-image">
+                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="image" class="lazy">
+                </div>
+                <div class="star-ratings">
+                    <img src="{{ block.settings.star_image | img_url: 'master'}}" alt="image" class="lazy">
+                </div>
+                <div class="item-content">
+                    <div class="reviewer">
+                        <img src="{{ block.settings.avatar | img_url: 'medium'}}" alt="avatar" class="lazy">
+                        <span class="name">{{ block.settings.name }}</span>
+                    </div>
+                    <p class="date">{{ block.settings.date }}</p>
+                    <p class="content">{{ block.settings.content }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+    {
+        "name": "Custom review section",
+        "settings": [
+            {
+              "type": "header",
+              "content": "Heading"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            },
+            {
+                "type": "range",
+                "id": "image_count",
+                "min": 2,
+                "max": 4,
+                "step": 1,
+                "unit": "n",
+                "label": "Image count",
+                "default": 4
+            },
+            {
+              "type": "range",
+              "id": "padding_top",
+              "min": 0,
+              "max": 100,
+              "step": 10,
+              "unit": "px",
+              "label": "Padding top",
+              "default": 50 
+            },
+            {
+              "type": "range",
+              "id": "padding_bottom",
+              "min": 0,
+              "max": 100,
+              "step": 10,
+              "unit": "px",
+              "label": "Padding bottom",
+              "default": 50 
+            },
+            {
+              "type": "range",
+              "id": "mobile_padding_top",
+              "min": 0,
+              "max": 60,
+              "step": 10,
+              "unit": "px",
+              "label": "Mobile padding top",
+              "default": 40 
+            },
+            {
+              "type": "range",
+              "id": "mobile_padding_bottom",
+              "min": 0,
+              "max": 60,
+              "step": 10,
+              "unit": "px",
+              "label": "Mobile padding bottom",
+              "default": 40 
+            }
+        ],
+        "blocks": [
+          {
+            "name": "review",
+            "type": "review",
+            "settings": [
+               {
+                 "type": "image_picker",
+                 "id": "image",
+                 "label": "Image"
+               },
+               {
+                 "type": "image_picker",
+                 "id": "star_image",
+                 "label": "Star ratings"
+               },
+               {
+                 "type": "text",
+                 "id": "name",
+                 "label": "Name"
+               },
+               {
+                 "type": "image_picker",
+                 "id": "avatar",
+                 "label": "Avatar"
+               },
+               {
+                 "type": "text",
+                 "id": "date",
+                 "label": "Date"
+               },
+               {
+                 "type": "text",
+                 "id": "content",
+                 "label": "Content"
+               }
+            ]
+          }
+        ],
+        "presets": [
+            {
+                "name": "Custom review section",
+                "category": "Review",
+                "blocks": [
+                    {
+                        "type": "review"
+                    },
+                    {
+                        "type": "review"
+                    },
+                    {
+                        "type": "review"
+                    }                    
+                ]
+            }
+        ]
+    }
+{% endschema %}

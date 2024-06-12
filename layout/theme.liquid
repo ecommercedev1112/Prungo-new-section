@@ -79,7 +79,23 @@
     <script src="{{ 'plyr.js' | asset_url }}" onload="onScriptLoad('plyr')" defer></script>
   {% endif %}
 
+
+
+
+
+  <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'slick-js.min.js' | asset_url }}" defer="defer"></script>
+  {{ 'slick.css' | asset_url | stylesheet_tag }}
+  {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+
+
+
   {{ 'core.css' | asset_url | stylesheet_tag }}
+  {{ 'custom.css' | asset_url | stylesheet_tag }}
+
+
+
+
 
   {% include 'pagefly-app-header' %}</head>
 
