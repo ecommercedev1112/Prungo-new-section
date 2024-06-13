@@ -61,7 +61,6 @@
     letter-spacing: 0.5px;
     margin-bottom: 8px;
 }
-
 .custom-featured-media .section-media .gallery-content .gallery-image-content {
     font-size: 14px;
     line-height: 16px;
@@ -69,6 +68,63 @@
     color: #000;
     font-family: Segoe UI;
 }
+
+
+
+.custom-featured-media .section-media.squar_landscape {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.custom-featured-media .section-media.squar_landscape .media-item{
+    aspect-ratio: unset;
+}
+.custom-featured-media .section-media.squar_landscape img {
+    height: calc(100% - 100px);
+}
+
+
+
+.custom-featured-media .section-media.landscapes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.custom-featured-media .section-media.landscapes .media-item {
+    aspect-ratio: unset;
+    min-height: 467px;
+}
+.custom-featured-media .section-media.landscapes img {
+    height: calc(100% - 100px);
+}
+
+
+.custom-featured-media .section-media.landscape {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 735px;
+    margin: auto;
+}
+
+.custom-featured-media .section-media.landscape .media-item {
+    aspect-ratio: unset;
+    min-height: 467px;
+}
+
+.custom-featured-media .section-media.landscape img {
+    height: calc(100% - 100px);
+}
+
+
+
+
+
+
+.custom-featured-media .custom-media {
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+
+
 
 /* custom image text */
 .custom-image-text-wrapper {
@@ -205,6 +261,22 @@
 }
 
 @media(max-width: 768px) {
+    .custom-featured-media .section-media .gallery-content {
+        padding-top: 20px;
+    }
+    .custom-featured-media .custom-media {
+        width: 100%;
+        height: 100%;
+    }
+    .custom-featured-media .section-media.landscape .media-item {
+        min-height: 300px;
+    }
+    .custom-featured-media .section-media.landscapes .media-item {
+        min-height: 300px;
+    }
+    .custom-featured-media .section-media.landscape {
+        padding-bottom: 40px;
+    }
     .custom-featured-media .section-media.mobile {
         display: block;
     }
@@ -252,6 +324,9 @@
     .custom-featured-media .featured-media-wrapper {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .custom-featured-media .section-header {
+        padding-bottom: 30px;
     }
     .custom-featured-media .section-header .subtitle {
         max-width: 100%;

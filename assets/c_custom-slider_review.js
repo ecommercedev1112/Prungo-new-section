@@ -50,7 +50,7 @@ $(document).ready(function(){
                 {
                     breakpoint: 768,
                     settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.2,
                     slidesToScroll: 1,
                     prevArrow: `<button class="slide-arrow prev-arrow review">
                                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">

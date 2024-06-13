@@ -21,10 +21,10 @@
         padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
     } 
     .section-review .prev-arrow {
-        top: 40%;
+        top: 30%;
     }  
     .section-review .next-arrow {
-        top: 40%;
+        top: 30%;
     }
 }
 
@@ -48,7 +48,7 @@
                 </div>
                 <div class="item-content">
                     <div class="reviewer">
-                        <img src="{{ block.settings.avatar | img_url: 'medium'}}" alt="avatar" class="lazy">
+                        <img src="{{ block.settings.avatar | img_url: 'master'}}" alt="avatar" class="lazy">
                         <span class="name">{{ block.settings.name }}</span>
                     </div>
                     <p class="date">{{ block.settings.date }}</p>
@@ -58,6 +58,7 @@
         {% endfor %}
     </div>
 </div>
+
 {% schema %}
     {
         "name": "Custom review section",
