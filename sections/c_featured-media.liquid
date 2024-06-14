@@ -45,20 +45,16 @@
   .slick-dotted.slick-slider {
     margin-bottom: 36px;
   }
+  .slick-dots li button::before {
+    top: -3px;
+  }
   @media(max-width: 768px) {
       .custom-featured-media .featured-media-wrapper {
           padding-top: {{ section.settings.mobile_padding_top }}px;
           padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
       }
-      .slick-track {
-        margin-left: -49vw;
-        padding-bottom: 120px;
-      }
       .slick-dots {
         padding-bottom: -40px;
-      }
-      .slick-dots li button::before {
-        top: -3px;
       }
 
   }
@@ -67,7 +63,7 @@
 
 <script src="{{ 'c_custom-slider.js' | asset_url }}" defer="defer"></script>
 
-<div class="featured-media-wrapper custom-page-width" data-image-count="{{section.settings.image_count}}">
+<div class="featured-media-wrapper custom-page-width {% if section.settings.layout_variant == "landscape" %}landscape{% endif %}" data-image-count="{{section.settings.image_count}}" >
   <div class="section-header">
     <h2 class="title desktop">{{ section.settings.title_desktop }}</h2>
     <h2 class="title mobile">{{ section.settings.title_mobile }}</h2>
@@ -78,7 +74,7 @@
   {% endfor %}
 
   {% if section.settings.layout_variant == "squares" %}
-    <div class="desktop squares section-media {% if index > section.settings.image_count %} custom-slider{% endif %}">
+    <div class="desktop squares section-media {% if index >= section.settings.image_count %} custom-slider{% endif %}">
       {% for block in section.blocks %}
         <div class="media-item">
           {% case block.type %}
@@ -109,27 +105,99 @@
                 {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
                 {%- assign external_video = true -%}
               {%- endif -%}
+              <div class="video-section">
+                {%- if external_video -%}
+                  <iframe
+                    class="block custom-media"
+                    src="{{ video_url }}"
+                    frameborder="0"
+                    allow="fullscreen"
+                    allowfullscreen
+                    id="video"
+                  >
+                  </iframe>
+                {%- elsif html_video != blank -%}
+                  {{
+                    html_video
+                    | video_tag:
+                      controls: true,
+                      preload: 'none',
+                      image_size: image_size,
+                      class: 'block custom-media',
+                      id: 'video'
+                  }}
+                {%- endif -%}
+                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
+                  <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="gallery-content">
+                <p class="gallery-image-title">{{ block.settings.title }}</p>
+                <p class="gallery-image-content">{{ block.settings.content }}</p>
+              </div>
+          {% endcase %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="mobile squares section-media custom-slider">
+      {% for block in section.blocks %}
+        <div class="media-item">
+          {% case block.type %}
+            {% when 'image' %}
+              <img src="{{ block.settings.gallery_image | img_url: 'master'}}" alt="image" class="lazy" width="{{ block.settings.gallery_image.width }}"
+                  height="{{ block.settings.gallery_image.height }}">  
+              <div class="gallery-content">
+                <p class="gallery-image-title">{{ block.settings.title }}</p>
+                <p class="gallery-image-content">{{ block.settings.content }}</p>
+              </div>
+            {% when 'media' %}
+              {%- assign html_video = block.settings.video -%}
+              {%- assign video_link = block.settings.video_link -%}
   
-              {%- if external_video -%}
-                <iframe
-                  class="block custom-media"
-                  src="{{ video_url }}"
-                  frameborder="0"
-                  allow="fullscreen"
-                  allowfullscreen
-                >
-                </iframe>
-              {%- elsif html_video != blank -%}
-                {{
-                  html_video
-                  | video_tag:
-                    controls: true,
-                    preload: 'none',
-                    image_size: image_size,
-                    class: 'block custom-media'
-                }}
+              {%- if video_link contains 'youtube.com/watch' -%}
+                {%- assign video_id = video_link | split: 'v=' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                {%- assign external_video = true -%}
+              {%- elsif video_link contains 'youtu.be/' -%}
+                {%- assign video_id = video_link | split: '.be/' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                {%- assign external_video = true -%}
+              {%- elsif video_link contains 'vimeo.com/' -%}
+                {%- assign video_id = video_link | split: 'vimeo.com/' -%}
+                {%- assign video_id = video_id[1] | split: '?' | first -%}
+                {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
+                {%- assign external_video = true -%}
               {%- endif -%}
-  
+              <div class="video-section">
+                {%- if external_video -%}
+                  <iframe
+                    class="block custom-media"
+                    src="{{ video_url }}"
+                    frameborder="0"
+                    allow="fullscreen"
+                    allowfullscreen
+                    id="video"
+                  >
+                  </iframe>
+                {%- elsif html_video != blank -%}
+                  {{
+                    html_video
+                    | video_tag:
+                      controls: true,
+                      preload: 'none',
+                      image_size: image_size,
+                      class: 'block custom-media',
+                      id: 'video'
+                  }}
+                {%- endif -%}
+                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
+                  <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
+                </svg>
+              </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
                 <p class="gallery-image-content">{{ block.settings.content }}</p>
@@ -173,27 +241,100 @@
                 {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
                 {%- assign external_video = true -%}
               {%- endif -%}
+              <div class="video-section">
+                {%- if external_video -%}
+                  <iframe
+                    class="block custom-media"
+                    src="{{ video_url }}"
+                    frameborder="0"
+                    allow="fullscreen"
+                    allowfullscreen
+                    id="video"
+                  >
+                  </iframe>
+                {%- elsif html_video != blank -%}
+                  {{
+                    html_video
+                    | video_tag:
+                      controls: true,
+                      preload: 'none',
+                      image_size: image_size,
+                      class: 'block custom-media',
+                      id: 'video'
+                  }}
+                {%- endif -%}
+                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
+                  <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="gallery-content">
+                <p class="gallery-image-title">{{ block.settings.title }}</p>
+                <p class="gallery-image-content">{{ block.settings.content }}</p>
+              </div>
+          {% endcase %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="mobile squar_landscape section-media custom-slider">
+      {% for block in section.blocks %}
+        <div class="media-item">
+          {% case block.type %}
+            {% when 'image' %}
+              <img src="{{ block.settings.gallery_image | img_url: 'master'}}" alt="image" class="lazy" width="{{ block.settings.gallery_image.width }}"
+                  height="{{ block.settings.gallery_image.height }}">
   
-              {%- if external_video -%}
-                <iframe
-                  class="block custom-media"
-                  src="{{ video_url }}"
-                  frameborder="0"
-                  allow="fullscreen"
-                  allowfullscreen
-                >
-                </iframe>
-              {%- elsif html_video != blank -%}
-                {{
-                  html_video
-                  | video_tag:
-                    controls: true,
-                    preload: 'none',
-                    image_size: image_size,
-                    class: 'block custom-media'
-                }}
+              <div class="gallery-content">
+                <p class="gallery-image-title">{{ block.settings.title }}</p>
+                <p class="gallery-image-content">{{ block.settings.content }}</p>
+              </div>
+            {% when 'media' %}
+              {%- assign html_video = block.settings.video -%}
+              {%- assign video_link = block.settings.video_link -%}
+  
+              {%- if video_link contains 'youtube.com/watch' -%}
+                {%- assign video_id = video_link | split: 'v=' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                {%- assign external_video = true -%}
+              {%- elsif video_link contains 'youtu.be/' -%}
+                {%- assign video_id = video_link | split: '.be/' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                {%- assign external_video = true -%}
+              {%- elsif video_link contains 'vimeo.com/' -%}
+                {%- assign video_id = video_link | split: 'vimeo.com/' -%}
+                {%- assign video_id = video_id[1] | split: '?' | first -%}
+                {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
+                {%- assign external_video = true -%}
               {%- endif -%}
-  
+              <div class="video-section">
+                {%- if external_video -%}
+                  <iframe
+                    class="block custom-media"
+                    src="{{ video_url }}"
+                    frameborder="0"
+                    allow="fullscreen"
+                    allowfullscreen
+                    id="video"
+                  >
+                  </iframe>
+                {%- elsif html_video != blank -%}
+                  {{
+                    html_video
+                    | video_tag:
+                      controls: true,
+                      preload: 'none',
+                      image_size: image_size,
+                      class: 'block custom-media',
+                      id: 'video'
+                  }}
+                {%- endif -%}
+                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
+                  <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
+                </svg>
+              </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
                 <p class="gallery-image-content">{{ block.settings.content }}</p>
@@ -236,27 +377,99 @@
                 {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
                 {%- assign external_video = true -%}
               {%- endif -%}
+              <div class="video-section">
+                {%- if external_video -%}
+                  <iframe
+                    class="block custom-media"
+                    src="{{ video_url }}"
+                    frameborder="0"
+                    allow="fullscreen"
+                    allowfullscreen
+                    id="video"
+                  >
+                  </iframe>
+                {%- elsif html_video != blank -%}
+                  {{
+                    html_video
+                    | video_tag:
+                      controls: true,
+                      preload: 'none',
+                      image_size: image_size,
+                      class: 'block custom-media',
+                      id: 'video'
+                  }}
+                {%- endif -%}
+                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
+                  <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="gallery-content">
+                <p class="gallery-image-title">{{ block.settings.title }}</p>
+                <p class="gallery-image-content">{{ block.settings.content }}</p>
+              </div>
+          {% endcase %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="mobile landscapes section-media custom-slider">
+      {% for block in section.blocks %}
+        <div class="media-item">
+          {% case block.type %}
+            {% when 'image' %}
+              <img src="{{ block.settings.gallery_image | img_url: 'master'}}" alt="image" class="lazy" width="{{ block.settings.gallery_image.width }}"
+                  height="{{ block.settings.gallery_image.height }}">
+              <div class="gallery-content">
+                <p class="gallery-image-title">{{ block.settings.title }}</p>
+                <p class="gallery-image-content">{{ block.settings.content }}</p>
+              </div>
+            {% when 'media' %}
+              {%- assign html_video = block.settings.video -%}
+              {%- assign video_link = block.settings.video_link -%}
   
-              {%- if external_video -%}
-                <iframe
-                  class="block custom-media"
-                  src="{{ video_url }}"
-                  frameborder="0"
-                  allow="fullscreen"
-                  allowfullscreen
-                >
-                </iframe>
-              {%- elsif html_video != blank -%}
-                {{
-                  html_video
-                  | video_tag:
-                    controls: true,
-                    preload: 'none',
-                    image_size: image_size,
-                    class: 'block custom-media'
-                }}
+              {%- if video_link contains 'youtube.com/watch' -%}
+                {%- assign video_id = video_link | split: 'v=' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                {%- assign external_video = true -%}
+              {%- elsif video_link contains 'youtu.be/' -%}
+                {%- assign video_id = video_link | split: '.be/' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                {%- assign external_video = true -%}
+              {%- elsif video_link contains 'vimeo.com/' -%}
+                {%- assign video_id = video_link | split: 'vimeo.com/' -%}
+                {%- assign video_id = video_id[1] | split: '?' | first -%}
+                {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
+                {%- assign external_video = true -%}
               {%- endif -%}
-  
+              <div class="video-section">
+                {%- if external_video -%}
+                  <iframe
+                    class="block custom-media"
+                    src="{{ video_url }}"
+                    frameborder="0"
+                    allow="fullscreen"
+                    allowfullscreen
+                    id="video"
+                  >
+                  </iframe>
+                {%- elsif html_video != blank -%}
+                  {{
+                    html_video
+                    | video_tag:
+                      controls: true,
+                      preload: 'none',
+                      image_size: image_size,
+                      class: 'block custom-media',
+                      id: 'video'
+                  }}
+                {%- endif -%}
+                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
+                  <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
+                </svg>
+              </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
                 <p class="gallery-image-content">{{ block.settings.content }}</p>
@@ -272,57 +485,63 @@
         {% for block in section.blocks %}
             <div class="media-item">
             {% case block.type %}
-                {% when 'image' %}
+              {% when 'image' %}
                 <img src="{{ block.settings.gallery_image | img_url: 'master'}}" alt="image" class="lazy" width="{{ block.settings.gallery_image.width }}"
                     height="{{ block.settings.gallery_image.height }}">
                 <div class="gallery-content">
                     <p class="gallery-image-title">{{ block.settings.title }}</p>
                     <p class="gallery-image-content">{{ block.settings.content }}</p>
                 </div>
-                {% when 'media' %}
+              {% when 'media' %}
                 {%- assign html_video = block.settings.video -%}
                 {%- assign video_link = block.settings.video_link -%}
-
+    
                 {%- if video_link contains 'youtube.com/watch' -%}
-                    {%- assign video_id = video_link | split: 'v=' -%}
-                    {%- assign video_id = video_id[1] | split: '&' | first -%}
-                    {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
-                    {%- assign external_video = true -%}
+                  {%- assign video_id = video_link | split: 'v=' -%}
+                  {%- assign video_id = video_id[1] | split: '&' | first -%}
+                  {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                  {%- assign external_video = true -%}
                 {%- elsif video_link contains 'youtu.be/' -%}
-                    {%- assign video_id = video_link | split: '.be/' -%}
-                    {%- assign video_id = video_id[1] | split: '&' | first -%}
-                    {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
-                    {%- assign external_video = true -%}
+                  {%- assign video_id = video_link | split: '.be/' -%}
+                  {%- assign video_id = video_id[1] | split: '&' | first -%}
+                  {%- assign video_url = 'https://www.youtube.com/embed/' | append: video_id -%}
+                  {%- assign external_video = true -%}
                 {%- elsif video_link contains 'vimeo.com/' -%}
-                    {%- assign video_id = video_link | split: 'vimeo.com/' -%}
-                    {%- assign video_id = video_id[1] | split: '?' | first -%}
-                    {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
-                    {%- assign external_video = true -%}
+                  {%- assign video_id = video_link | split: 'vimeo.com/' -%}
+                  {%- assign video_id = video_id[1] | split: '?' | first -%}
+                  {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
+                  {%- assign external_video = true -%}
                 {%- endif -%}
-
-                {%- if external_video -%}
+                <div class="video-section">
+                  {%- if external_video -%}
                     <iframe
-                    class="block custom-media"
-                    src="{{ video_url }}"
-                    frameborder="0"
-                    allow="fullscreen"
-                    allowfullscreen
+                      class="block custom-media"
+                      src="{{ video_url }}"
+                      frameborder="0"
+                      allow="fullscreen"
+                      allowfullscreen
+                      id="video"
                     >
                     </iframe>
-                {%- elsif html_video != blank -%}
+                  {%- elsif html_video != blank -%}
                     {{
-                    html_video
-                    | video_tag:
+                      html_video
+                      | video_tag:
                         controls: true,
                         preload: 'none',
                         image_size: image_size,
-                        class: 'block custom-media'
+                        class: 'block custom-media',
+                        id: 'video'
                     }}
-                {%- endif -%}
-
+                  {%- endif -%}
+                  <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
+                    <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
+                  </svg>
+                </div>
                 <div class="gallery-content">
-                    <p class="gallery-image-title">{{ block.settings.title }}</p>
-                    <p class="gallery-image-content">{{ block.settings.content }}</p>
+                  <p class="gallery-image-title">{{ block.settings.title }}</p>
+                  <p class="gallery-image-content">{{ block.settings.content }}</p>
                 </div>
             {% endcase %}
             </div>
@@ -331,6 +550,33 @@
   {% endif %}
 
 </div>
+
+<script>
+var bunnyVideo = document.getElementById("video");
+var el = document.querySelector(".play-btn");
+
+bunnyVideo.addEventListener("click", function() {
+  el.classList.add('hidden');
+});
+el.addEventListener("click", function() {
+  el.classList.add('hidden');
+});
+function playPause() {
+  if (bunnyVideo.paused) {
+    bunnyVideo.play();
+    el.classList.remove('hidden');
+    el.className ="";
+  } else {
+    bunnyVideo.pause();
+    el.className = "play-btn";
+  }
+
+}
+bunnyVideo.addEventListener("click", playPause, false);
+  
+</script>
+
+
 
 {% schema %}
 {

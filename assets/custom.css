@@ -78,8 +78,8 @@
 .custom-featured-media .section-media.squar_landscape .media-item{
     aspect-ratio: unset;
 }
-.custom-featured-media .section-media.squar_landscape img {
-    height: calc(100% - 100px);
+.custom-featured-media .desktop.section-media.squar_landscape img {
+    height: calc(100% - 130px);
 }
 
 
@@ -97,6 +97,9 @@
 }
 
 
+.custom-featured-media .section-media.landscape .video-section {
+    height: calc(100% - 100px);
+}
 .custom-featured-media .section-media.landscape {
     display: grid;
     grid-template-columns: 1fr;
@@ -106,23 +109,50 @@
 
 .custom-featured-media .section-media.landscape .media-item {
     aspect-ratio: unset;
-    min-height: 467px;
+    height: 467px;
 }
 
 .custom-featured-media .section-media.landscape img {
     height: calc(100% - 100px);
 }
 
-
-
-
-
-
 .custom-featured-media .custom-media {
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
+    border-radius: 32px;
+    object-fit: cover;
+}
+.custom-featured-media .desktop.squar_landscape .video-section {
+    position: relative;
+    height: calc(100% - 130px);
+}
+.custom-featured-media .video-section .play-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+.custom-featured-media .video-section .play-btn.hidden {
+    display: none;
+}
+.custom-featured-media .mobile {
+    display: none !important;
+}
+.custom-featured-media .squares.section-media .slick-track {
+    padding-bottom: 120px;
+}
+.custom-featured-media .desktop.squares.section-media .video-section {
+    height: 100%;
 }
 
+.custom-featured-media .desktop.landscapes.section-media .video-section {
+    height: calc(100% - 110px);
+    position: relative;
+}
+.custom-featured-media .desktop.section-media .video-section {
+    position: relative;
+}
 
 
 
@@ -132,7 +162,7 @@
 }
 .custom-image-text-wrapper .section-header {
     padding-bottom: 50px;
-    text-align: center;
+    text-align: center; 
 }
 
 .custom-image-text-wrapper .section-header h2 {
@@ -237,7 +267,7 @@
 }
 .custom-review-section .section-review .item .item-content {
     padding: 40px 20px;
-    margin-top: -40px;
+    margin-top: -20px;
     height: 210px;
 }
 .custom-review-section .section-review .item .item-content .reviewer{
@@ -259,17 +289,40 @@
     color: #000;
     text-align: left;
 }
+.custom-review-section .section-review .custom-star-rates {
+    display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px #0000001a;
+        width: 56%;
+        margin: auto;
+        padding: 3px 0;
+        margin-top: -20px;
+        z-index: 999;
+        position: relative;
+        background: #fff;
+}
+.custom-review-section .section-review .custom-star-rates span.star-rate-color svg path {
+    fill: rgb(235, 204, 29);
+}
+.custom-review-section .section-review .custom-star-rates span svg {
+    width: 28px;
+    height: 28px;
+}
+
 
 @media(max-width: 768px) {
+    .custom-featured-media .mobile {
+        display: block;
+    }
     .custom-featured-media .section-media .gallery-content {
         padding-top: 20px;
     }
     .custom-featured-media .custom-media {
         width: 100%;
         height: 100%;
-    }
-    .custom-featured-media .section-media.landscape .media-item {
-        min-height: 300px;
     }
     .custom-featured-media .section-media.landscapes .media-item {
         min-height: 300px;
@@ -278,7 +331,7 @@
         padding-bottom: 40px;
     }
     .custom-featured-media .section-media.mobile {
-        display: block;
+        display: block !important;
     }
     .custom-featured-media .section-media.desktop {
         display: none;
@@ -287,7 +340,7 @@
         display: none;
     }
     .custom-featured-media .section-header .title.mobile {
-        display: block;
+        display: block !important;
     }
     .custom-featured-media .section-header h2 {
         letter-spacing: -1px;
@@ -337,5 +390,26 @@
     .custom-review-section .section-review .item .item-content {
         padding: 70px 20px;
     }
-
+    .custom-featured-media .video-section {
+        aspect-ratio: 1;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .custom-review-section .section-review .custom-star-rates {
+        width: 72%;
+    }
+    .custom-featured-media .landscape.section-media .video-section {
+        height: calc(100% - 73px);
+    }
+    .custom-featured-media .section-media.landscape .media-item {
+        height: 280px;
+    }
+    .custom-featured-media .section-media.landscape {
+        height: 280px;
+    }
+    .featured-media-wrapper.landscape {
+        padding-bottom: 20px;
+    }
+    
 }
