@@ -105,18 +105,9 @@
                 {%- assign video_url = 'https://player.vimeo.com/video/' | append: video_id -%}
                 {%- assign external_video = true -%}
               {%- endif -%}
+
               <div class="video-section">
-                {%- if external_video -%}
-                  <iframe
-                    class="block custom-media"
-                    src="{{ video_url }}"
-                    frameborder="0"
-                    allow="fullscreen"
-                    allowfullscreen
-                    id="video"
-                  >
-                  </iframe>
-                {%- elsif html_video != blank -%}
+                {%- if html_video != blank  -%}
                   {{
                     html_video
                     | video_tag:
@@ -126,11 +117,28 @@
                       class: 'block custom-media',
                       id: 'video'
                   }}
+                  {%- elsif external_video -%}
+                  <iframe
+                    class="block custom-media youtube"
+                    src="{{ video_url }}"
+                    frameborder="0"
+                    allow="fullscreen"
+                    allowfullscreen
+                    id="video"
+                  > 
+                  </iframe>
+                  
                 {%- endif -%}
-                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="play-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
                   <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
                 </svg>
+                
+                <div class="cover-image">
+                  {% if block.settings.cover_image %}
+                    <img src="{{ block.settings.cover_image | image_url: width: 360 }}" loading="lazy" alt="cover image" width="{{ block.settings.cover_image.width }}" height="{{ block.settings.cover_image.height }}">
+                  {% endif %}
+                </div>
               </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
@@ -174,13 +182,13 @@
               <div class="video-section">
                 {%- if external_video -%}
                   <iframe
-                    class="block custom-media"
+                    class="block custom-media youtube"
                     src="{{ video_url }}"
                     frameborder="0"
                     allow="fullscreen"
                     allowfullscreen
                     id="video"
-                  >
+                  > 
                   </iframe>
                 {%- elsif html_video != blank -%}
                   {{
@@ -193,10 +201,16 @@
                       id: 'video'
                   }}
                 {%- endif -%}
-                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="play-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
                   <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
                 </svg>
+                
+                <div class="cover-image">
+                  {% if block.settings.cover_image %}
+                    <img src="{{ block.settings.cover_image | image_url: width: 360 }}" loading="lazy" alt="cover image" width="{{ block.settings.cover_image.width }}" height="{{ block.settings.cover_image.height }}">
+                  {% endif %}
+                </div>
               </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
@@ -244,13 +258,13 @@
               <div class="video-section">
                 {%- if external_video -%}
                   <iframe
-                    class="block custom-media"
+                    class="block custom-media youtube"
                     src="{{ video_url }}"
                     frameborder="0"
                     allow="fullscreen"
                     allowfullscreen
                     id="video"
-                  >
+                  > 
                   </iframe>
                 {%- elsif html_video != blank -%}
                   {{
@@ -263,10 +277,16 @@
                       id: 'video'
                   }}
                 {%- endif -%}
-                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="play-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
                   <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
                 </svg>
+                
+                <div class="cover-image">
+                  {% if block.settings.cover_image %}
+                    <img src="{{ block.settings.cover_image | image_url: width: 360 }}" loading="lazy" alt="cover image" width="{{ block.settings.cover_image.width }}" height="{{ block.settings.cover_image.height }}">
+                  {% endif %}
+                </div>
               </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
@@ -311,13 +331,13 @@
               <div class="video-section">
                 {%- if external_video -%}
                   <iframe
-                    class="block custom-media"
+                    class="block custom-media youtube"
                     src="{{ video_url }}"
                     frameborder="0"
                     allow="fullscreen"
                     allowfullscreen
                     id="video"
-                  >
+                  > 
                   </iframe>
                 {%- elsif html_video != blank -%}
                   {{
@@ -330,10 +350,16 @@
                       id: 'video'
                   }}
                 {%- endif -%}
-                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="play-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
                   <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
                 </svg>
+                
+                <div class="cover-image">
+                  {% if block.settings.cover_image %}
+                    <img src="{{ block.settings.cover_image | image_url: width: 360 }}" loading="lazy" alt="cover image" width="{{ block.settings.cover_image.width }}" height="{{ block.settings.cover_image.height }}">
+                  {% endif %}
+                </div>
               </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
@@ -380,13 +406,13 @@
               <div class="video-section">
                 {%- if external_video -%}
                   <iframe
-                    class="block custom-media"
+                    class="block custom-media youtube"
                     src="{{ video_url }}"
                     frameborder="0"
                     allow="fullscreen"
                     allowfullscreen
                     id="video"
-                  >
+                  > 
                   </iframe>
                 {%- elsif html_video != blank -%}
                   {{
@@ -399,10 +425,16 @@
                       id: 'video'
                   }}
                 {%- endif -%}
-                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="play-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
                   <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
                 </svg>
+                
+                <div class="cover-image">
+                  {% if block.settings.cover_image %}
+                    <img src="{{ block.settings.cover_image | image_url: width: 360 }}" loading="lazy" alt="cover image" width="{{ block.settings.cover_image.width }}" height="{{ block.settings.cover_image.height }}">
+                  {% endif %}
+                </div>
               </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
@@ -446,13 +478,13 @@
               <div class="video-section">
                 {%- if external_video -%}
                   <iframe
-                    class="block custom-media"
+                    class="block custom-media youtube"
                     src="{{ video_url }}"
                     frameborder="0"
                     allow="fullscreen"
                     allowfullscreen
                     id="video"
-                  >
+                  > 
                   </iframe>
                 {%- elsif html_video != blank -%}
                   {{
@@ -465,10 +497,16 @@
                       id: 'video'
                   }}
                 {%- endif -%}
-                <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="play-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
                   <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
                 </svg>
+                
+                <div class="cover-image">
+                  {% if block.settings.cover_image %}
+                    <img src="{{ block.settings.cover_image | image_url: width: 360 }}" loading="lazy" alt="cover image" width="{{ block.settings.cover_image.width }}" height="{{ block.settings.cover_image.height }}">
+                  {% endif %}
+                </div>
               </div>
               <div class="gallery-content">
                 <p class="gallery-image-title">{{ block.settings.title }}</p>
@@ -515,13 +553,13 @@
                 <div class="video-section">
                   {%- if external_video -%}
                     <iframe
-                      class="block custom-media"
+                      class="block custom-media youtube"
                       src="{{ video_url }}"
                       frameborder="0"
                       allow="fullscreen"
                       allowfullscreen
                       id="video"
-                    >
+                    > 
                     </iframe>
                   {%- elsif html_video != blank -%}
                     {{
@@ -534,10 +572,16 @@
                         id: 'video'
                     }}
                   {%- endif -%}
-                  <svg class="play-btn" onclick="playPause()" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="play-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="18" cy="18" r="18" fill="black" fill-opacity="0.8"/>
                     <path d="M15.6994 11.4626C15.2535 11.1885 14.6931 11.1794 14.2382 11.4355C13.7832 11.6916 13.5 12.1737 13.5 12.6979V23.3032C13.5 23.8274 13.7832 24.3095 14.2382 24.5656C14.6931 24.8217 15.2535 24.8096 15.6994 24.5385L24.3764 19.2358C24.8073 18.9737 25.0694 18.5067 25.0694 18.0005C25.0694 17.4944 24.8073 17.0304 24.3764 16.7653L15.6994 11.4626Z" fill="white"/>
                   </svg>
+                  
+                  <div class="cover-image">
+                    {% if block.settings.cover_image %}
+                      <img src="{{ block.settings.cover_image | image_url: width: 360 }}" loading="lazy" alt="cover image" width="{{ block.settings.cover_image.width }}" height="{{ block.settings.cover_image.height }}">
+                    {% endif %}
+                  </div>
                 </div>
                 <div class="gallery-content">
                   <p class="gallery-image-title">{{ block.settings.title }}</p>
@@ -552,27 +596,30 @@
 </div>
 
 <script>
-var bunnyVideo = document.getElementById("video");
-var el = document.querySelector(".play-btn");
 
-bunnyVideo.addEventListener("click", function() {
-  el.classList.add('hidden');
-});
-el.addEventListener("click", function() {
-  el.classList.add('hidden');
-});
-function playPause() {
-  if (bunnyVideo.paused) {
-    bunnyVideo.play();
-    el.classList.remove('hidden');
-    el.className ="";
-  } else {
-    bunnyVideo.pause();
-    el.className = "play-btn";
-  }
+  document.querySelectorAll('.play-btn').forEach(item => {
+    console.log("start")
+    item.addEventListener("click", function() {
+      this.classList.add('hidden');
+      var coverImg = this.closest('.video-section').querySelector('.cover-image');
+      coverImg.classList.add('hidden');
 
-}
-bunnyVideo.addEventListener("click", playPause, false);
+      var video = item.closest('.video-section').querySelector('.custom-media');
+      
+      video.play();
+
+      video.addEventListener("click", function() {
+        if (this.paused) {
+            this.play();
+            this.closest('.video-section').querySelector('.play-btn').classList.remove('hidden');
+          } else {
+            this.pause();
+            this.closest('.video-section').querySelector('.play-btn').classList.add('hidden');
+          }  
+        });
+      });   
+  })
+
   
 </script>
 
@@ -713,8 +760,12 @@ bunnyVideo.addEventListener("click", playPause, false);
           "id": "video_link",
           "label": "Video link",
           "accept": ["youtube", "vimeo"],
-          "info": "Streaming video source from YouTube or Vimeo.",
-          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          "info": "Streaming video source from YouTube or Vimeo."          
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "Cover image"
         },
         {
           "type": "text",

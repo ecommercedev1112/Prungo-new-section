@@ -15,7 +15,7 @@
     line-height: 36px;
     font-weight: 600;   
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
     margin-bottom: 14px;
 }
 .custom-featured-media .section-header .title.mobile {
@@ -26,7 +26,7 @@
     line-height: 16px;
     font-weight: 400;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
     letter-spacing: 0.5px;
     margin: auto;
     max-width: 72%;
@@ -57,7 +57,7 @@
     line-height: 16.8px;
     font-weight: 700;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
     letter-spacing: 0.5px;
     margin-bottom: 8px;
 }
@@ -66,7 +66,7 @@
     line-height: 16px;
     font-weight: 400;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
 }
 
 
@@ -96,7 +96,16 @@
     height: calc(100% - 100px);
 }
 
-
+.custom-featured-media .section-media .video-section {
+    position: relative;
+}
+.custom-featured-media .section-media .video-section .cover-image {
+    width: 100%;
+    height: 100%;
+}
+.custom-featured-media .section-media .video-section .cover-image img {
+    height: 100%;
+}
 .custom-featured-media .section-media.landscape .video-section {
     height: calc(100% - 100px);
 }
@@ -132,7 +141,17 @@
     top: 50%;
     left: 50%;
     cursor: pointer;
+    z-index: 99999;
 }
+.custom-featured-media .video-section .cover-image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.custom-featured-media .video-section .cover-image.hidden {
+    display: none;
+}
+
 .custom-featured-media .video-section .play-btn.hidden {
     display: none;
 }
@@ -145,13 +164,17 @@
 .custom-featured-media .desktop.squares.section-media .video-section {
     height: 100%;
 }
-
+.custom-featured-media .desktop.squares.section-media .media-item {
+    max-width: 33%;
+}
 .custom-featured-media .desktop.landscapes.section-media .video-section {
     height: calc(100% - 110px);
     position: relative;
 }
 .custom-featured-media .desktop.section-media .video-section {
     position: relative;
+    max-height: 367px;
+    height: 100%;
 }
 
 
@@ -170,7 +193,7 @@
     line-height: 36px;
     font-weight: 600;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
     margin-bottom: 14px;
 }
 
@@ -179,13 +202,14 @@
     line-height: 16px;
     font-weight: 400;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
     letter-spacing: 0.5px;
 }
 .custom-image-text-wrapper .section-image-text .item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
+    align-items: stretch;
 }
 .custom-image-text-wrapper .section-image-text .item.image-left {
     flex-direction: row-reverse;
@@ -197,25 +221,41 @@
     border-radius: 32px;
 }
 .custom-image-text-wrapper .section-image-text .item .item-text .title {
-    font-size: 18px;
-    line-height: 16px;
+    line-height: 40px;
     font-weight: 600;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
     margin-bottom: 50px;
     text-align: center;
 }
+.custom-image-text-wrapper .section-image-text .item .item-text .title.mobile {
+    display: none;
+}
 .custom-image-text-wrapper .section-image-text .item .item-text .content {
-    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
+}
+.custom-image-text-wrapper .section-image-text .item .item-text .content.mobile {
+    display: none;
 }
 .custom-image-text-wrapper .section-image-text .item .item-image {
     width: 66%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px; 
+}
+.custom-image-text-wrapper .section-image-text .item .item-image .image-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.custom-image-text-wrapper .section-image-text .item .item-image .image-text p {
+    font-size: 36px;
+    color: #fff;
 }
 
 /* custom review section */
@@ -232,7 +272,7 @@
     line-height: 36px;
     font-weight: 600;
     color: #000;
-    font-family: Segoe UI;
+    /* font-family: Segoe UI; */
     margin-bottom: 50px;
 }
 .custom-review-section .section-review {
@@ -247,6 +287,7 @@
 }
 .custom-review-section .section-review .item .item-image {
     position: relative;
+    aspect-ratio: 1.46;
 }
 .custom-image-text-wrapper .section-image-text .item .item-image .mobile {
     display: none;
@@ -288,6 +329,8 @@
     line-height: 24px;
     color: #000;
     text-align: left;
+    max-height: 48px;
+    overflow-y: auto;
 }
 .custom-review-section .section-review .custom-star-rates {
     display: flex;
@@ -314,6 +357,25 @@
 
 
 @media(max-width: 768px) {
+    .custom-review-section .section-review .item .item-image img {
+        max-height: 190px;
+    }
+    .custom-image-text-wrapper .section-image-text .item .item-text .title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .custom-image-text-wrapper .section-image-text .item .item-text .title.desktop {
+        display: none;
+    }
+    .custom-image-text-wrapper .section-image-text .item .item-text .title.mobile {
+        display: block;
+    }
+    .custom-image-text-wrapper .section-image-text .item .item-text .content.mobile {
+        display: block;
+    }
+    .custom-image-text-wrapper .section-image-text .item .item-text .content.desktop {
+        display: none; 
+    }
     .custom-featured-media .mobile {
         display: block;
     }
@@ -357,6 +419,8 @@
     .custom-image-text-wrapper .section-image-text .item .item-text {
         width: 100%;
         margin-bottom: 24px;
+        height: 100%;
+        min-height: 330px;
     }
     .custom-image-text-wrapper .section-image-text .item .item-image {
         width: 100%;
@@ -388,7 +452,7 @@
         padding: 0 20px;
     }
     .custom-review-section .section-review .item .item-content {
-        padding: 70px 20px;
+        padding: 40px 20px;
     }
     .custom-featured-media .video-section {
         aspect-ratio: 1;
@@ -411,5 +475,9 @@
     .featured-media-wrapper.landscape {
         padding-bottom: 20px;
     }
-    
+    .custom-image-text-wrapper .section-image-text .item .item-image .image-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
 }

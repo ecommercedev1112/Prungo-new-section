@@ -3,15 +3,52 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
 }
+.custom-image-text-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+  object-fit: cover;
+  object-position: center;
+}
+.section-image-text .item .item-text{
+  position: relative;
+}
+.section-image-text .item h2 {
+  opacity: 0;
+  transform: translateY(50%);
+}
+.section-image-text p.content {
+  opacity: 0;
+  transform: translateY(50%);
+
+}
+.section-image-text .item h2.animation-text {
+  opacity: 1;
+  transition: all .8s ease;
+  transform: translateY(0%);
+  
+}
+.section-image-text p.content.animation-text{
+  opacity: 1;
+  transition: all .8s ease;
+  transform: translateY(0%);
+}
+
+
 @media(max-width: 768px) {
     .custom-image-text-wrapper {
-        padding-top: {{ section.settings.mobile_padding_top }}px;
-        padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
-    }   
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }  
+    .section-image-text p.content.animation-text {
+      bottom: 30px;
+    } 
 }
 {% endstyle %}
 
-
+<image-text>
 <div class="custom-image-text-wrapper custom-page-width">
     <div class="section-header">
         <h2 class="title">{{ section.settings.title }}</h2>
@@ -21,17 +58,160 @@
         {% for block in section.blocks %}
             <div class="item mobile {% if block.settings.direction == "left" %} image-left {% endif %}">
                 <div class="item-text">
-                    <h2 class="title">{{ block.settings.title }}</h2>
-                    <p class="content">{{ block.settings.content }}</p>
+                    <h2 class="desktop title title-{{forloop.index}}" style="font-size: {{ block.settings.font_size }}px">{{ block.settings.title }}</h2>
+                    <h2 class="mobile title title-{{forloop.index}}" style="font-size: {{ block.settings.m_font_size }}px">{{ block.settings.title }}</h2>
+                    <p class="desktop content content-{{forloop.index}}" style="font-size: {{ block.settings.content_font_size }}px">{{ block.settings.content }}</p>
+                    <p class="mobile content content-{{forloop.index}}" style="font-size: {{ block.settings.content_m_font_size }}px">{{ block.settings.content }}</p>
                 </div>
                 <div class="item-image">
-                    <img src="{{ block.settings.image_desktop | img_url: 'master' }}" alt="image" class="lazy desktop">
-                    <img src="{{ block.settings.image_mobile | img_url: 'master' }}" alt="image" class="lazy mobile">
+                  <img src="{{ block.settings.image_desktop | img_url: 'master' }}" alt="image" class="lazy desktop" >
+                  <img src="{{ block.settings.image_mobile | img_url: 'master' }}" alt="image" class="lazy mobile" >
+                  <div class="image-text">
+                    <p style="opacity:{{ block.settings.transparency }}%">{{ block.settings.image_text }}</p>
+                  </div>
                 </div>
             </div>
         {% endfor %}
     </div>
-</div>
+  </div>
+</image-text>
+<script>
+  let imgText = document.querySelector('.custom-image-text-wrapper');
+
+  let deskTitleFr = document.querySelector('.desktop.title-1');
+  let mobileTitleFr = document.querySelector('.mobile.title-1');
+  let titleFr = document.querySelector('.title-1');
+
+  let deskTitleSe = document.querySelector('.desktop.title-2');
+  let mobileTitleSe = document.querySelector('.mobile.title-2');
+  let titleSe = document.querySelector('.title-2');
+
+  let deskTitleTh = document.querySelector('.desktop.title-3');
+  let mobileTitleTh = document.querySelector('.mobile.title-3');
+  let titleTh = document.querySelector('.title-3');
+
+  let deskTitleFo = document.querySelector('.desktop.title-4');
+  let mobileTitleFo = document.querySelector('.mobile.title-4');
+  let titleFo = document.querySelector('.title-4');
+
+
+  let deskSubTiFr = document.querySelector('.desktop.content-1');
+  let mobileSubTiFr = document.querySelector('.mobile.content-1');
+  let subTiFr =document.querySelector('.content-1');
+
+  let deskSubTiSe = document.querySelector('.desktop.content-2');
+  let mobileSubTiSe = document.querySelector('.mobile.content-2');
+  let subTiSe =document.querySelector('.content-2');
+
+  let deskSubTiTh = document.querySelector('.desktop.content-3');
+  let mobileSubTiTh = document.querySelector('.mobile.content-3');
+  let subTiTh =document.querySelector('.content-3');
+
+  let deskSubTiFo = document.querySelector('.desktop.content-4');
+  let mobileSubTiFo = document.querySelector('.mobile.content-4');
+  let subTiFo =document.querySelector('.content-4');
+
+
+  const element = document.getElementById('my-element');
+
+  // Function to check if the element is in the viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Add a scroll event listener
+  window.addEventListener('scroll', function() {
+
+    if (isElementInViewport(titleFr)) {
+      console.log("t-1");
+
+      deskTitleFr.classList.add('animation-text');
+      mobileTitleFr.classList.add('animation-text');
+    } else {
+      deskTitleFr.classList.remove('animation-text');      
+      mobileTitleFr.classList.remove('animation-text');      
+    }
+
+    if (isElementInViewport(titleSe)) {
+      console.log("t-2");
+
+      deskTitleSe.classList.add('animation-text');
+      mobileTitleSe.classList.add('animation-text');
+    } else {
+      deskTitleSe.classList.remove('animation-text');      
+      mobileTitleSe.classList.remove('animation-text');      
+    }
+
+    if (isElementInViewport(titleTh)) {
+      console.log("t-3");
+
+      deskTitleTh.classList.add('animation-text');
+      mobileTitleTh.classList.add('animation-text');
+    } else {
+      deskTitleTh.classList.remove('animation-text');      
+      mobileTitleTh.classList.remove('animation-text');      
+    }
+
+    if (isElementInViewport(titleFo)) {
+      console.log("t-4");
+
+      deskTitleFo.classList.add('animation-text');
+      mobileTitleFo.classList.add('animation-text');
+    } else {
+      deskTitleFo.classList.remove('animation-text');      
+      mobileTitleFo.classList.remove('animation-text');      
+    }
+
+    {% comment %} content {% endcomment %}
+
+    if (isElementInViewport(subTiFr)) {
+      console.log("c-1");
+
+      deskSubTiFr.classList.add('animation-text');
+      mobileSubTiFr.classList.add('animation-text');
+    } else {
+      deskSubTiFr.classList.remove('animation-text');      
+      mobileSubTiFr.classList.remove('animation-text');      
+    }
+
+    if (isElementInViewport(subTiSe)) {
+      console.log("c-2");
+
+      deskSubTiSe.classList.add('animation-text');
+      mobileSubTiSe.classList.add('animation-text');
+    } else {
+      deskSubTiSe.classList.remove('animation-text');      
+      mobileSubTiSe.classList.remove('animation-text');      
+    }
+
+    if (isElementInViewport(subTiTh)) {
+      console.log("c-3");
+      deskSubTiTh.classList.add('animation-text');
+      mobileSubTiTh.classList.add('animation-text');
+    } else {
+      deskSubTiTh.classList.remove('animation-text');      
+      mobileSubTiTh.classList.remove('animation-text');      
+    }
+
+    if (isElementInViewport(subTiFo)) {
+      console.log("c-4");
+      deskSubTiFo.classList.add('animation-text');
+      mobileSubTiFo.classList.add('animation-text');
+    } else {
+      deskSubTiFo.classList.remove('animation-text');      
+      mobileSubTiFo.classList.remove('animation-text');      
+    }
+
+  });
+
+</script>
+
 {% schema %}
     {
         "name": "Custom image text",
@@ -107,6 +287,54 @@
                  "label": "Text"
                },
                {
+                 "type": "header",
+                 "content": "Title font size setting"
+               },
+               {
+                 "type": "range",
+                 "id": "font_size",
+                 "min": 20,
+                 "max": 60,
+                 "step": 1,
+                 "unit": "px",
+                 "label": "Title Font size",
+                 "default": 38
+               },
+               {
+                 "type": "range",
+                 "id": "m_font_size",
+                 "min": 10,
+                 "max": 30,
+                 "step": 1,
+                 "unit": "px",
+                 "label": "Mobile Title font size",
+                 "default": 22
+               },
+               {
+                 "type": "header",
+                 "content": "Content font size setting"
+               },
+               {
+                 "type": "range",
+                 "id": "content_font_size",
+                 "min": 10,
+                 "max": 30,
+                 "step": 1,
+                 "unit": "px",
+                 "label": "Content Font size",
+                 "default": 16
+               },
+               {
+                 "type": "range",
+                 "id": "content_m_font_size",
+                 "min": 10,
+                 "max": 30,
+                 "step": 1,
+                 "unit": "px",
+                 "label": "Mobile content font size",
+                 "default": 16
+               },
+               {
                  "type": "image_picker",
                  "id": "image_desktop",
                  "label": "Desktop Image"
@@ -132,6 +360,21 @@
                    
                  ],
                  "default": "right"
+               },
+               {
+                 "type": "text",
+                 "id": "image_text",
+                 "label": "Text above image"
+               },
+               {
+                 "type": "range",
+                 "id": "transparency",
+                 "min": 0,
+                 "max": 100,
+                 "step": 5,
+                 "unit": "%",
+                 "label": "Transparency",
+                 "default": 80
                }
             ]
           }
